@@ -1,0 +1,7 @@
+" vim: set ft=muttator:
+
+noremap ; :
+noremap : ;
+noremap a ma<esc>
+noremap c o
+noremap q :qall<enter>

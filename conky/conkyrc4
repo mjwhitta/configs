@@ -1,0 +1,46 @@
+background yes
+use_xft yes
+xftfont monospace:size=9
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 50
+maximum_width 240
+draw_shades no
+draw_outline yes
+draw_borders no
+draw_graph_borders no
+default_color 507fff
+default_shade_color 507fff
+default_outline_color 323232
+alignment tl
+gap_x 10
+gap_y 40
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+##############################################
+#  Output
+#  Desktop Keybinds
+##############################################
+TEXT
+${font monospace:size=20} $alignr ${time %l:%M:%S %p}${font monospace:size=9}
+$alignr ${time %A %B %d}
+
+DESKTOP KEYBINDS ${hr 2}
+S+d $alignr Display Desktop
+S+1 $alignr Desktop 1
+S+2 $alignr Desktop 2
+S+Sh+1 $alignr Send to Desktop 1
+S+Sh+2 $alignr Send to Desktop 2
+C+A+Left $alignr Desktop <--
+C+A+Right $alignr Desktop -->
+C+A+Sh+Left $alignr Send <--
+C+A+Sh+Right $alignr Send -->
+S+z $alignr System Info

@@ -1,0 +1,69 @@
+# Source passwords whenever needed
+# Generate with 'gpg -e -s --armor muttpassenc'
+# Example line: set my_imap_pass = "password"
+# Escape $, ", and \
+# source "gpg -dq ~/.mutt/muttpassenc.asc |"
+
+# UTF-8 support
+set config_charset = utf-8
+
+# Shows 7 messages at the top of the pager
+set pager_index_lines = 7
+
+# Don't page to next message
+set pager_stop
+
+# Sort by threads
+# set sort = threads
+set sort = reverse-threads
+
+# Sort threads according to the date of the last recevied message in
+# the thread
+set sort_aux = last-date-received
+
+# Search encrypted messages
+set thorough_search = yes
+
+# Start with threads collapsed
+# folder-hook . "exec collapse-all"
+
+# Stores the certificates for imaps
+set certificate_file = "~/.mutt/certificates"
+
+# Speed up folders switch
+set sleep_time = 0
+
+# Allow Mutt to open new imap connection automatically
+unset imap_passive
+
+# Keep IMAP connection alive by polling
+set imap_keepalive = 300
+
+# How often to check for mail (in seconds)
+set mail_check = 120
+set timeout = 150
+
+# Store message headres locally to speed things up
+# Not available in all mutt builds
+# set header_cache = "~/.cache/mutt"
+
+# Store messages locally to speed things up
+set message_cachedir = "~/.cache/mutt"
+
+# Don't mark old unread emails
+set nomark_old
+
+# No plus signs for wrapped lines
+set markers = no
+
+# From kegilber
+set autoedit = yes
+set include = yes
+set edit_headers = yes
+
+# From tabair
+# set nosmart_wrap
+set nomove
+ignore *
+unignore from date subject to cc
+auto_view text/html

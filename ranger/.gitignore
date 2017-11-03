@@ -1,0 +1,8 @@
+# Everything
+*
+# Except this file
+!.gitignore
+# and rc.conf
+!rc.conf
+!rifle.conf
+!rifle.txt

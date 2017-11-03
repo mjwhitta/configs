@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+let "width=$(tput cols) - 52"
+echo -n "set index_format=\"%4C %S %-3M %-${width}.${width}s | "
+echo "%-20.20L %[%m/%d/%y %I:%M]\""

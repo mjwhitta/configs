@@ -1,0 +1,65 @@
+# Manjaro Openbox-Lite Conky Configuration Script
+#
+# Written by Carl Duff of the Manjaro Team
+# Email: carl[at]manjaro[dot]org - Website: www.manjaro.org - Forum: http://forum.manjaro.org/
+#
+# Feel free to alter, distribute, etc., this config file as you wish.
+#
+
+#  Basic Settings
+
+background yes
+use_xft yes
+xftfont sans:size=11
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type override #desktop
+own_window_hints below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 450 1
+maximum_width 600
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color Black
+default_shade_color 000000
+default_outline_color d8d8d8
+alignment tr
+gap_x 5
+gap_y 20
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale yes
+
+# Fancy Conky display
+
+TEXT
+${font sans:size=65}${alignr}${color #aaaaaa}${time %l:%M:%S %P}${voffset -27}${voffset -45}
+${font sans:size=25}${alignr}${time %a %B %d, %Y}${voffset -15}
+${font sans:bold:size=9}${alignr}${color #507fff}CPU ${color #aaaaaa}${cpu cpu0}% - ${color #507fff}RAM ${color #aaaaaa}$mem - ${color #507fff}HD ${color #aaaaaa}$fs_used - ${color #507fff}BAT ${color #aaaaaa}$battery_percent% - ${color #507fff}UP ${color #aaaaaa}$uptime_short
+${hr 1}${voffset 5}
+${font sans:bold:size=9}${alignr}${color #507fff}Super + f
+${alignr}${color #aaaaaa}Thunar${voffset -5}
+
+${font sans:bold:size=9}${alignr}${color #507fff}Super + m
+${alignr}${color #aaaaaa}DMenu${voffset -5}
+
+${font sans:bold:size=9}${alignr}${color #507fff}Super + r
+${alignr}${color #aaaaaa}Alfred${voffset -5}
+
+${font sans:bold:size=9}${alignr}${color #507fff}Super + t
+${alignr}${color #aaaaaa}Xterm${voffset -5}
+
+${font sans:bold:size=9}${alignr}${color #507fff}Super + u
+${alignr}${color #aaaaaa}Update${voffset -5}
+
+${font sans:bold:size=9}${alignr}${color #507fff}Super + w
+${alignr}${color #aaaaaa}Chromium${voffset -5}
+
+${font sans:bold:size=9}${alignr}${color #507fff}Super + x
+${alignr}${color #aaaaaa}Logout

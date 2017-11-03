@@ -1,0 +1,23 @@
+# Mutt settings
+source ~/.mutt/settings
+
+# Colors
+source ~/.mutt/colors
+
+# PGP
+source ~/.mutt/pgp
+
+# S/MIME
+source ~/.mutt/smime
+
+# Server settings
+source `F=~/.mutt/server; [ -f $F ] || F=/dev/null; echo $F`
+
+# Key bindings
+source ~/.mutt/keybindings
+
+# Aliases
+source `F=~/.mutt/aliases; [ -f $F ] || F=/dev/null; echo $F`
+
+# Columns
+`~/.mutt/columns`

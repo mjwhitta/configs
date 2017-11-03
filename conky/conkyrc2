@@ -1,0 +1,49 @@
+background yes
+use_xft yes
+xftfont monospace:size=9
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 50
+maximum_width 240
+draw_shades no
+draw_outline yes
+draw_borders no
+draw_graph_borders no
+default_color 507fff
+default_shade_color 507fff
+default_outline_color 323232
+alignment tl
+gap_x 10
+gap_y 40
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+##############################################
+#  Output
+#  App Keybinds
+##############################################
+TEXT
+${font monospace:size=20} $alignr ${time %l:%M:%S %p}${font monospace:size=9}
+$alignr ${time %A %B %d}
+
+APP KEYBINDS ${hr 2}
+S+w $alignr Chromium Browser
+S+r $alignr Dynamic Menu
+S+g $alignr GIMP
+S+e $alignr GVim
+S+l $alignr Lock Screen
+S+x $alignr Logout
+S+space $alignr Main Menu
+S+Sh+r $alignr Restart Openbox
+S+t $alignr Terminator Terminal
+S+f $alignr Thunar File Manager
+S+m $alignr VLC Media Player
+S+q $alignr XKill
+S+z $alignr Tiling Keybinds

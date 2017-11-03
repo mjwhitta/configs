@@ -1,0 +1,27 @@
+# Defaults
+color attachment default default
+color body default default ".*"
+color bold default default
+color error default default
+color header default default ".*"
+color hdrdefault default default
+color index default default ".*"
+color indicator default default
+color markers default default
+color message default default
+color normal default default
+color quoted default default
+color search default default
+color signature default default
+color status default default
+color tilde default default
+color tree default default
+color underline default default
+
+# Customize
+color attachment white default
+color error white red
+color index green default "~C $USER"
+color indicator blue white
+color status white blue
+color tree cyan default

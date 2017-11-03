@@ -1,0 +1,95 @@
+! "Number of columns"
+rofi.columns: 3
+
+! "Font to use"
+rofi.font: monospace 13
+
+! "Terminal to use"
+rofi.terminal: terminator
+
+! "Ssh command to execute"
+rofi.ssh-command: {terminal} -x {ssh-client} {host}
+
+! "Disable history in run/ssh"
+rofi.disable-history: true
+
+! "Set case-sensitivity"
+rofi.case-sensitive: false
+
+! "Cycle through the results list"
+rofi.cycle: true
+
+! "Enable sidebar-mode"
+rofi.sidebar-mode: true
+
+! "Parse hosts file for ssh mode"
+rofi.parse-hosts: true
+
+! "Parse known_hosts file for ssh mode"
+rofi.parse-known-hosts: true
+
+! "Set the matching algorithm. (normal, regex, glob, fuzzy)"
+rofi.matching: regex
+
+! "New style theme file"
+rofi.theme: ~/.config/rofi/milesrc.rasi
+
+! "Paste primary selection"
+rofi.kb-primary-paste: Control+V,Shift+Insert
+
+! "Paste clipboard"
+rofi.kb-secondary-paste: Control+v,Insert
+
+! "Beginning of line"
+rofi.kb-move-front: Control+a
+
+! "End of line"
+rofi.kb-move-end: Control+e
+
+! "Move back one char"
+rofi.kb-move-char-back: Left,Control+b
+
+! "Move forward one char"
+rofi.kb-move-char-forward: Right,Control+f
+
+! "Delete next char"
+rofi.kb-remove-char-forward: Delete,Control+d
+
+! "Delete previous char"
+rofi.kb-remove-char-back: BackSpace,Control+h
+
+! "Delete till the end of line"
+rofi.kb-remove-to-eol: Control+k
+
+! "Delete till the start of line"
+rofi.kb-remove-to-sol: Control+u
+
+! "Accept entry"
+rofi.kb-accept-entry: Control+j,Control+m,Return,KP_Enter
+
+! "Select previous entry"
+rofi.kb-row-up: Up,Control+p,ISO_Left_Tab
+
+! "Select next entry"
+rofi.kb-row-down: Down,Control+n
+
+! "Go to next row, if one left, accept it, if no left next mode."
+rofi.kb-row-tab: Tab
+
+! "Set selected item as input text"
+rofi.kb-row-select: Control+space
+
+! "Quit rofi"
+rofi.kb-cancel: Escape,Control+g,Control+bracketleft
+
+! "Select rows"
+rofi.kb-select-1: Super+1
+rofi.kb-select-2: Super+2
+rofi.kb-select-3: Super+3
+rofi.kb-select-4: Super+4
+rofi.kb-select-5: Super+5
+rofi.kb-select-6: Super+6
+rofi.kb-select-7: Super+7
+rofi.kb-select-8: Super+8
+rofi.kb-select-9: Super+9
+rofi.kb-select-10: Super+0

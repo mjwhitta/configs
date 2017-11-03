@@ -1,0 +1,55 @@
+background yes
+use_xft yes
+xftfont monospace:size=9
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 50
+maximum_width 240
+draw_shades no
+draw_outline yes
+draw_borders no
+draw_graph_borders no
+default_color 507fff
+default_shade_color 507fff
+default_outline_color 323232
+alignment tl
+gap_x 10
+gap_y 40
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+##############################################
+#  Output
+#  Tiling Keybinds
+##############################################
+TEXT
+${font monospace:size=20} $alignr ${time %l:%M:%S %p}${font monospace:size=9}
+$alignr ${time %A %B %d}
+
+TILING KEYBINDS ${hr 2}
+S+u $alignr Focus North
+S+n $alignr Focus South
+S+j $alignr Focus West
+S+k $alignr Focus East
+S+a $alignr Toggle Maximize
+S+h $alignr Toggle Horizontal
+S+v $alignr Toggle Vertical
+S+Sh+j $alignr Snap <--
+S+Sh+k $alignr Snap -->
+S+c $alignr Move to Center
+S+Up $alignr Move North
+S+Down $alignr Move South
+S+Left $alignr Move West
+S+Right $alignr Move East
+S+Sh+Up $alignr Resize North
+S+Sh+Down $alignr Resize South
+S+Sh+Left $alignr Resize West
+S+Sh+Right $alignr Resize East
+S+z $alignr Desktop Keybinds

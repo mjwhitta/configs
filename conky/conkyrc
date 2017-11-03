@@ -1,0 +1,76 @@
+background yes
+use_xft yes
+xftfont monospace:size=9
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 50
+maximum_width 240
+draw_shades no
+draw_outline yes
+draw_borders no
+draw_graph_borders yes
+default_color 507fff
+default_shade_color 507fff
+default_outline_color 323232
+alignment tl
+gap_x 10
+gap_y 40
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale yes
+temperature_unit fahrenheit
+short_units true
+##############################################
+#  Output
+#  System Info
+##############################################
+TEXT
+${font monospace:size=20} $alignr ${time %l:%M:%S %p}${font monospace:size=9}
+$alignr ${time %A %B %d}
+
+Uptime:$alignr$uptime
+Host:$alignr${execi 120 hostname}
+OS:$alignr${execi 120 uname -o}
+Kernel:$alignr${execi 120 uname -r}
+Machine:$alignr${execi 120 uname -m}
+
+WEATHER ${hr 2}
+${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KMGE temperature 300} °F ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KMGE humidity 300}% humidity
+${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KMGE wind_speed 300} km/h ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KMGE wind_dir 300} ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KMGE cloud_cover}
+
+MEMORY ${hr 2}
+/        $alignc${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
+${fs_bar /}
+/home    $alignc${fs_used /home} / ${fs_size /home} $alignr ${fs_used_perc /home}%
+${fs_bar /home}
+RAM:      $alignc$mem / $memmax $alignr $memperc%
+$membar
+Swap usage: $alignc$swap / $swapmax $alignr $swapperc%
+$swapbar
+
+PROCESSORS ${hr 2}
+CPU: ${cpu cpu0}% ${cpubar cpu0}
+${cpugraph cpu0}
+
+TOP PROCESSES ${hr 2}
+${execi 3 ps -u $USER -o comm --sort=-%cpu | head -n2 | tail -n1} $alignr ${execi 3 ps -u $USER -o pid,%cpu --sort=-%cpu | head -n2 | tail -n1}%
+${execi 3 ps -u $USER -o comm --sort=-%cpu | head -n3 | tail -n1} $alignr ${execi 3 ps -u $USER -o pid,%cpu --sort=-%cpu | head -n3 | tail -n1}%
+${execi 3 ps -u $USER -o comm --sort=-%cpu | head -n4 | tail -n1} $alignr ${execi 3 ps -u $USER -o pid,%cpu --sort=-%cpu | head -n4 | tail -n1}%
+${execi 3 ps -u $USER -o comm --sort=-%cpu | head -n5 | tail -n1} $alignr ${execi 3 ps -u $USER -o pid,%cpu --sort=-%cpu | head -n5 | tail -n1}%
+${execi 3 ps -u $USER -o comm --sort=-%cpu | head -n6 | tail -n1} $alignr ${execi 3 ps -u $USER -o pid,%cpu --sort=-%cpu | head -n6 | tail -n1}%
+
+NETWORK ${hr 2}
+Down: ${downspeedf eth0} K/s $alignr ${totaldown eth0}
+${downspeedgraph eth0}
+Up:   ${upspeedf eth0} K/s $alignr ${totalup eth0}
+${upspeedgraph eth0}
+
+SHORTCUT KEYS ${hr 2}
+S+z $alignr App Keybinds

@@ -1,0 +1,7 @@
+set smime_ca_location = "/usr/share/curl/curl-ca-bundle.crt"
+set smime_get_signer_cert_command = \
+    "openssl smime -verify -in %f -noverify -signer %c -out /dev/null"
+set smime_get_cert_email_command = \
+    "openssl x509 -in  %f -noout -email"
+set smime_verify_opaque_command = \
+    "openssl smime -verify -inform DER -in %s %C"

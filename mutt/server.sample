@@ -1,0 +1,40 @@
+# Source passwords
+source "gpg -dq ~/.mutt/muttpassenc.asc |"
+
+# Incoming
+set my_imap_server = "imap.domain"
+set my_imap_server_port = 993
+set imap_user = mjwhitta
+set imap_pass = $my_imap_pass
+set folder = "imaps://imap.domain/"
+set spoolfile = "+INBOX"
+mailboxes = "+INBOX"
+
+# Archives/Drafts/Sent
+set my_archives_dir = "Archives"
+set my_drafts_dir = "Drafts"
+set my_sent_dir = "Sent"
+
+# Automagically save sent messages on the imap server
+set record = "+Sent"
+
+# Drafts
+set postponed = "+Drafts"
+
+# Outgoing
+set realname = "Miles Whittaker"
+set from = "$imap_user@domain"
+set use_from = yes
+set smtp_url = "smtp://mail.domain"
+set my_outgoing_smtp_server = "mail.domain"
+set my_smtp_port = "25"
+
+# Sending
+set hostname = "domain"
+set use_domain = yes
+my_hdr Bcc: "$imap_user@domain"
+
+color index green default "~C miles"
+color index green default "~C $imap_user"
+color index white red ".*phish.*"
+color index white red ".*spam.*"

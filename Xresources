@@ -1,0 +1,90 @@
+! Terminal colors
+! milesrc
+xterm*background: #323232
+xterm*foreground: #507fff
+! Solarized
+!xterm*background: #002b36
+!xterm*foreground: #839496
+! Tango
+!xterm*background: #323232
+!xterm*foreground: #00aaff
+
+! milesrc normal colors
+xterm*color0: #323232
+xterm*color1: #ff50aa
+xterm*color2: #7faa50
+xterm*color3: #cccc50
+xterm*color4: #507fff
+xterm*color5: #aa7fff
+xterm*color6: #50cccc
+xterm*color7: #eeeeee
+! milesrc bright colors
+xterm*color8: #505050
+xterm*color9: #ff50aa
+xterm*color10: #7faa50
+xterm*color11: #cccc50
+xterm*color12: #507fff
+xterm*color13: #aa7fff
+xterm*color14: #50cccc
+xterm*color15: #eeeeee
+
+! Solarized normal colors
+!xterm*color0: #073642
+!xterm*color1: #dc322f
+!xterm*color2: #859900
+!xterm*color3: #b58900
+!xterm*color4: #268bd2
+!xterm*color5: #d33682
+!xterm*color6: #2aa198
+!xterm*color7: #eee8d5
+! Solarized bright colors
+!xterm*color8: #002b36
+!xterm*color9: #cb4b16
+!xterm*color10: #586e75
+!xterm*color11: #657b83
+!xterm*color12: #839496
+!xterm*color13: #6c71c4
+!xterm*color14: #93a1a1
+!xterm*color15: #fdf6e3
+
+! Tango normal colors
+!xterm*color0: #000000
+!xterm*color1: #cc0000
+!xterm*color2: #4e9a06
+!xterm*color3: #c4a000
+!xterm*color4: #3465a4
+!xterm*color5: #75507b
+!xterm*color6: #0b939b
+!xterm*color7: #d3d7cf
+! Tango bright colors
+!xterm*color8: #555753
+!xterm*color9: #ef2929
+!xterm*color10: #8ae234
+!xterm*color11: #fce94f
+!xterm*color12: #729fcf
+!xterm*color13: #ad7fa8
+!xterm*color14: #34e2e2
+!xterm*color15: #eeeeec
+
+! Font and locale
+xterm*utf8: 1
+xterm*locale: true
+xterm*utf8Title: true
+xterm*renderFont: true
+xterm*preeditType: Root
+xterm*xftAntialias: true
+xterm*faceName: Monospace:pixelsize=13
+xterm*faceNameDoublesize: Monospace:pixelsize=13
+
+! Look and feel
+xterm*inputMethod:ibus
+xterm*termName: xterm-256color
+xterm*geometry: 80x25
+xterm*scrollBar: false
+xterm*loginshell: true
+xterm*cursorBlink: true
+xterm*savelines: 4096
+xterm*charClass: 35-38:48,44-57:48,63-90:48,95:48,97-122:48,126:48
+
+! Fix alt
+xterm*metaSendsEscape: true

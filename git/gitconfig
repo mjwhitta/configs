@@ -1,0 +1,23 @@
+[user]
+    name = Miles Whittaker
+    email = mjwhitta@gmail.com
+[core]
+    filemode = false
+    attributesfile = ~/.gitattributes
+    excludesfile = ~/.cvsignore
+[merge]
+    tool = vimdiff
+[ghi]
+    editor = vim
+[github]
+    host = github.com
+    user = mjwhitta
+[push]
+    default = simple
+[diff "pptxt"]
+    textconv = pptxt --git
+[alias]
+    ctags = !.git/hooks/ctags
+    stalk = !.git/hooks/stalk
+[init]
+    templatedir = ~/.git

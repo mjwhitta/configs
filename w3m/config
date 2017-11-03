@@ -1,0 +1,12 @@
+auto_image 1
+confirm_qq 0
+display_image 1
+editor /usr/bin/vim
+extbrowser /usr/bin/xdg-open
+ext_image_viewer 1
+image_scale 75
+indent_incr 4
+mailcap ~/.w3m/mailcap
+tabstop 4
+use_cookie 0
+use_mouse 1

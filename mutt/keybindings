@@ -1,0 +1,41 @@
+# vim keybindings
+bind generic,index gg first-entry
+bind generic,index G last-entry
+bind pager gg top
+bind pager G bottom
+bind pager j next-line
+bind pager k previous-line
+
+# Reply-all
+bind index,pager r group-reply
+
+# Use ; instead of :
+# Don't actually, I use tag-prefix way more
+# bind generic ";" enter-command
+# bind generic ":" tag-prefix
+
+# Collapse/Uncollapse thread with <C-/>
+macro index \037 "<collapse-thread>"
+
+# Collapse/Uncollapse all threads
+# macro index za "<first-entry><collapse-all>"
+macro index za "<first-entry>"
+
+# Fetch new mail with <C-r>
+macro index \022 "<sync-mailbox><enter><imap-fetch-mail>"
+
+# Ignore space
+bind index,editor <space> noop
+
+# Archiving
+macro index,pager a "<save-message>=$my_archives_dir<enter>" \
+    "Archive a message"
+macro index,pager A "<save-message>=$my_archives_dir<enter>" \
+    "Archive a message"
+
+# Folder traversal
+macro index ga "<change-folder>=$my_archives_dir<enter>" \
+    "Goto archives"
+macro index gd "<change-folder>=$my_drafts_dir<enter>" "Goto drafts"
+macro index gi "<change-folder>=INBOX<enter>" "Goto inbox"
+macro index gs "<change-folder>=$my_sent_dir<enter>" "Goto sent"

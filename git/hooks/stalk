@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if [[ -z $(git rev-parse --show-toplevel 2>/dev/null) ]]; then
+    git rev-parse
+    exit
+fi
+
+declare -a commits
+commits=($(
+    PAGER= git log --author=$1 --oneline --reverse | awk '{print $1}'
+))
+echo -e "There are ${#commits[@]} commits by $1...\n"
+
+for commit in "${commits[@]}"; do
+    PAGER= git show -b --color-words=. --ignore-blank-lines \
+        --minimal $commit
+done
