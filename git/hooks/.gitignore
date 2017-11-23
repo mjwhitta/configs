@@ -1,0 +1,8 @@
+*
+!.gitignore
+!ctags
+!post-checkout
+!post-commit
+!post-merge
+!post-rewrite
+!stalk

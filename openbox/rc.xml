@@ -92,6 +92,7 @@
                     <action name="Raise"/>
                     <action name="Unshade"/>
                 </finalactions>
+                <raise>yes</raise>
             </action>
         </keybind>
         <keybind key="A-C-h">
@@ -167,6 +168,7 @@
                     <action name="Raise"/>
                     <action name="Unshade"/>
                 </finalactions>
+                <raise>yes</raise>
             </action>
         </keybind>
         <keybind key="C-q">
@@ -335,10 +337,24 @@
             </action>
         </keybind>
         <keybind key="W-j">
-            <action name="NextWindow"/>
+            <action name="NextWindow">
+                <finalactions>
+                    <action name="Focus"/>
+                    <action name="Raise"/>
+                    <action name="Unshade"/>
+                </finalactions>
+                <raise>yes</raise>
+            </action>
         </keybind>
         <keybind key="W-k">
-            <action name="PreviousWindow"/>
+            <action name="PreviousWindow">
+                <finalactions>
+                    <action name="Focus"/>
+                    <action name="Raise"/>
+                    <action name="Unshade"/>
+                </finalactions>
+                <raise>yes</raise>
+            </action>
         </keybind>
         <keybind key="W-l">
             <action name="Execute">
