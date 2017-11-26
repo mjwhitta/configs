@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+[[ -z $(command -v git-lfs) ]] || git lfs pre-push "$@"

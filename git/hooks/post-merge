@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
 .git/hooks/ctags >/dev/null 2>&1 &
+[[ -z $(command -v git-lfs) ]] || git lfs post-merge "$@"

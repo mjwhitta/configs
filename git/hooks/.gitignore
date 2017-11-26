@@ -5,4 +5,5 @@
 !post-commit
 !post-merge
 !post-rewrite
+!pre-push
 !stalk
