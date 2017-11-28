@@ -32,12 +32,13 @@ configs_menu() {
     echo "10: openbox"
     echo "11: ranger"
     echo "12: rofi"
-    echo "13: tilda (not included in All)"
-    echo "14: tint2"
-    echo "15: top"
-    echo "16: w3m"
-    echo "17: x11"
-    echo "18: vimperator (not included in All)"
+    echo "13: terminator"
+    echo "14: tilda (not included in All)"
+    echo "15: tint2"
+    echo "16: top"
+    echo "17: w3m"
+    echo "18: x11"
+    echo "19: vimperator (not included in All)"
     echo " q: Quit"
     echo
     read -p "Select an option to continue: " option
@@ -53,6 +54,7 @@ configs_menu() {
             openbox_configs
             ranger_configs
             rofi_configs
+            terminator_configs
             tint2_configs
             top_configs
             w3m_configs
@@ -70,12 +72,13 @@ configs_menu() {
         "10") openbox_configs ;;
         "11") ranger_configs ;;
         "12") rofi_configs ;;
-        "13") tilda_menu ;;
-        "14") tint2_configs ;;
-        "15") top_configs ;;
-        "16") w3m_configs ;;
-        "17") x11_configs ;;
-        "18") vimperator_configs ;;
+        "13") terminator_configs ;;
+        "14") tilda_menu ;;
+        "15") tint2_configs ;;
+        "16") top_configs ;;
+        "17") w3m_configs ;;
+        "18") x11_configs ;;
+        "19") vimperator_configs ;;
         "q") exit ;;
         *) ;;
     esac
@@ -202,6 +205,14 @@ rofi_configs() {
         cd $HOME/.config
         rm -rf rofi
         ln -s $HERE/rofi
+    )
+}
+
+terminator_configs() {
+    (
+        cd $HOME/.config
+        rm -rf terminator
+        ln -s $HERE/terminator
     )
 }
 
