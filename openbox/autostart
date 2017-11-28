@@ -8,10 +8,10 @@
 # Should be written in sh
 
 # Capslock is Super
-[ -f ~/scripts/misc/fix_capslock ] && ~/scripts/misc/fix_capslock &
+[ ! -f ~/scripts/misc/fix_capslock ] || ~/scripts/misc/fix_capslock &
 
 ## Wallpaper
-[ -n "$(command -v nitrogen)" ] && nitrogen --restore &
+[ -z "$(command -v nitrogen)" ] || nitrogen --restore &
 
 ## Compositing
 if [ -n "$(command -v compton)" ] &&
@@ -22,34 +22,34 @@ fi
 sleep 1
 
 ## Panel
-[ -n "$(command -v tint2)" ] && [ ! -f ~/.notint2 ] && tint2 &
+[ -z "$(command -v tint2)" ] || [ -f ~/.notint2 ] || tint2 &
 
 # NetworkManager applet
-[ -n "$(command -v nm-applet)" ] && nm-applet &
+[ -z "$(command -v nm-applet)" ] || nm-applet &
 
 # Pulseaudio applet
-[ -n "$(command -v pa-applet)" ] && pa-applet &
+[ -z "$(command -v pa-applet)" ] || pa-applet &
 
 # PCManFM is run in daemon-mode to enable auto-mounting of removable
 # media
-[ -n "$(command -v pcmanfm)" ] && pcmanfm -d &
+[ -z "$(command -v pcmanfm)" ] || pcmanfm -d &
 
 # Screensaver
-[ -n "$(command -v xscreensaver)" ] && xscreensaver -no-splash &
+[ -z "$(command -v xscreensaver)" ] || xscreensaver -no-splash &
 
 # Notifications
-[ -n "$(command -v dunst)" ] && dunst &
+[ -z "$(command -v dunst)" ] || dunst &
 
 # Numlock
-[ -n "$(command -v numlockx)" ] && numlockx &
+[ -z "$(command -v numlockx)" ] || numlockx &
 
 sleep 10
 
 # VNC Server
-[ -n "$(command -v x11vnc)" ] && x11vnc -usepw -display :0 -forever &
+[ -z "$(command -v x11vnc)" ] || x11vnc -usepw -display :0 -forever &
 
 # Local autostart script
-[ -f ~/.autostart.local ] && ~/.autostart.local &
+[ ! -f ~/.autostart.local ] || ~/.autostart.local
 
 # Lockscreen b/c autologin
-[ -f ~/.lock_on_login ] && xscreensaver-command -lock &
+[ ! -f ~/.lock_on_login ] || xscreensaver-command -lock &
