@@ -69,14 +69,15 @@
     copy_on_selection = True
     cursor_color = "#ffffff"
     cursor_color_fg = False
+    custom_command = [[ -n $(command -v tmux) ]] && [[ ! -f $HOME/.notmux ]] && [[ -z $TMUX ]] && tmux -2 new -A -s main || $SHELL
     font = Monospace 13
     foreground_color = "#507fff"
     icon_bell = False
-    login_shell = True
     palette = "#323232:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee:#505050:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee"
     scroll_on_output = True
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False
+    use_custom_command = True
     use_system_font = False
     word_chars = "-A-Za-z0-9,./?%&#_"
