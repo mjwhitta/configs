@@ -56,14 +56,12 @@ set nomark_old
 # No plus signs for wrapped lines
 set markers = no
 
-# From kegilber
+# Misc
 set autoedit = yes
 set include = yes
 set edit_headers = yes
-
-# From tabair
 # set nosmart_wrap
 set nomove
 ignore *
 unignore from date subject to cc
-auto_view text/html
+# auto_view text/html
