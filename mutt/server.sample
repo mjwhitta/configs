@@ -1,40 +1,45 @@
 # Source passwords
-source "gpg -dq ~/.mutt/muttpassenc.asc |"
+#source "gpg -dq ~/.mutt/muttpassenc.asc |"
 
-# Incoming
-set my_imap_server = "imap.domain"
-set my_imap_server_port = 993
-set imap_user = mjwhitta
+# Incoming Gmail
+set imap_user = "TODO_username@gmail.com"
 set imap_pass = $my_imap_pass
-set folder = "imaps://imap.domain/"
+set folder = "imaps://imap.gmail.com/"
 set spoolfile = "+INBOX"
 mailboxes = "+INBOX"
 
 # Archives/Drafts/Sent
-set my_archives_dir = "Archives"
-set my_drafts_dir = "Drafts"
-set my_sent_dir = "Sent"
+set my_archives_dir = "[Gmail]/All Mail"
+set my_drafts_dir = "[Gmail]/Drafts"
+set my_sent_dir = "[Gmail]/Sent Mail"
+
+# Actually delete message
+macro index,pager d "<save-message>=[Gmail]/Trash<enter>" \
+    "Move message to trash"
 
 # Automagically save sent messages on the imap server
-set record = "+Sent"
+# set record = "+[Gmail]/Sent Mail"
+# Gmail already does and we don't want duplicates
+unset record
 
 # Drafts
-set postponed = "+Drafts"
+set postponed = "+[Gmail]/Drafts"
 
-# Outgoing
-set realname = "Miles Whittaker"
-set from = "$imap_user@domain"
+# Outgoing Gmail
+set realname = "TODO_realname"
+set from = $imap_user
 set use_from = yes
-set smtp_url = "smtp://mail.domain"
-set my_outgoing_smtp_server = "mail.domain"
-set my_smtp_port = "25"
+set smtp_url = "smtps://$imap_user:$imap_pass@smtp.gmail.com"
+set ssl_force_tls = yes
 
 # Sending
-set hostname = "domain"
+set hostname = "gmail.com"
 set use_domain = yes
-my_hdr Bcc: "$imap_user@domain"
+my_hdr Bcc: $imap_user
 
-color index green default "~C miles"
-color index green default "~C $imap_user"
+# Store message headers locally to speed things up
+set header_cache = "~/.cache/mutt"
+
+color index green default "~C TODO_firstname"
 color index white red ".*phish.*"
 color index white red ".*spam.*"
