@@ -52,7 +52,7 @@ link_status() {
             if [[ $already_from == $from ]]; then
                 echo "[+] $to is linked"
             else
-                echo "[-] $to is not linked to the configs"
+                echo "[-] $to is not linked"
             fi
         elif [[ -f $to ]]; then
             echo "[-] $to is not a symlink"
@@ -95,10 +95,8 @@ unlink() {
 usage() {
     echo "Usage: ${0/*\//} [OPTIONS] <action>"
     echo "Options:"
-    echo "    -f, --force"
-    echo "        Do not make backups"
-    echo "    -h, --help"
-    echo "        Display this help message"
+    echo "    -f, --force    Do not make backups"
+    echo "    -h, --help     Display this help message"
     echo
     echo "Actions:"
     echo "    link"
