@@ -32,7 +32,7 @@ rofi.parse-known-hosts: true
 rofi.matching: regex
 
 ! "New style theme file"
-rofi.theme: ~/.config/rofi/milesrc.rasi
+rofi.theme: ~/.config/rofi/theme.rasi
 
 ! "Paste primary selection"
 rofi.kb-primary-paste: Control+V,Shift+Insert

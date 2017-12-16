@@ -1,0 +1,69 @@
+# Conky
+# conky/conky_manjaro:$HOME/.conkyrc
+# conky/conkyrc.gray:$HOME/.conkyrc
+conky/conkyrc:$HOME/.conkyrc
+
+# Ctags
+ctags:$HOME/.ctags
+
+# Dunst
+dunst:$HOME/.config/dunst
+
+# GDB
+gdb:$HOME/.gdb
+gdb/gdbinit:$HOME/.gdbinit
+
+# Git
+git/cvsignore:$HOME/.cvsignore
+git/gitconfig:$HOME/.gitconfig
+git/gitattributes:$HOME/.gitattributes
+git/hooks:$HOME/.git/hooks
+
+# htop
+htop:$HOME/.config/htop
+
+# Less
+less:$HOME/.config/less
+
+# Mutt
+mutt:$HOME/.mutt
+
+# Muttator
+muttator/muttatorrc:$HOME/.muttatorrc
+
+# Openbox
+openbox:$HOME/.config/openbox
+
+# Ranger
+ranger:$HOME/.config/ranger
+
+# rofi
+rofi/config:$HOME/.config/rofi/config
+# rofi/Arc.rasi:$HOME/.config/rofi/theme.rasi
+rofi/dmenu.rasi:$HOME/.config/rofi/theme.rasi
+# rofi/glue_pro_blue.rasi:$HOME/.config/rofi/theme.rasi
+# rofi/paper-float.rasi:$HOME/.config/rofi/theme.rasi
+# rofi/Paper.rasi:$HOME/.config/rofi/theme.rasi
+
+# Terminator
+terminator:$HOME/.config/terminator
+
+# Tilda
+tilda:$HOME/.config/tilda
+# tilda_kali:$HOME/.config/tilda
+
+# Tint2
+tint2/aero_dark.conf:$HOME/.config/tint2/tint2rc
+
+# top
+top/toprc:$HOME/.toprc
+
+# Vimperator
+vimperator/vimperatorrc:$HOME/.vimperatorrc
+
+# w3m
+w3m:$HOME/.w3m
+
+# X11
+x11/Xresources:$HOME/.Xresources
+x11/xscreensaver:$HOME/.xscreensaver
