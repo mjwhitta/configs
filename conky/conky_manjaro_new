@@ -40,4 +40,4 @@ ${font Zekton:style=Bold:size=9}${font}
 ${voffset 10}${goto 90}${font Zekton:style=Bold:size=9}RAM
 ${goto 90}${font Zekton:style=Bold:size=9}${memperc}%
 
-${image ~/scripts/config/conky/lsd.png -p 10,0}
+${image $HOME/.configs/conky/lsd.png -p 10,0}

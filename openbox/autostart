@@ -8,7 +8,7 @@
 # Should be written in sh
 
 # Capslock is Super
-[ ! -f ~/scripts/misc/fix_capslock ] || ~/scripts/misc/fix_capslock &
+[ ! -f ~/misc/bin/fix_capslock ] || ~/misc/bin/fix_capslock &
 
 ## Wallpaper
 [ -z "$(command -v nitrogen)" ] || nitrogen --restore &
