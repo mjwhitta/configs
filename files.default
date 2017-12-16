@@ -7,7 +7,7 @@ conky/conkyrc:$HOME/.conkyrc
 ctags:$HOME/.ctags
 
 # Dunst
-dunst:$HOME/.config/dunst
+dunst/dunstrc:$HOME/.config/dunst/dunstrc
 
 # GDB
 gdb:$HOME/.gdb
@@ -20,10 +20,10 @@ git/gitattributes:$HOME/.gitattributes
 git/hooks:$HOME/.git/hooks
 
 # htop
-htop:$HOME/.config/htop
+htop/htoprc:$HOME/.config/htop/htoprc
 
 # Less
-less:$HOME/.config/less
+less/lessfilter:$HOME/.config/less/lessfilter
 
 # Mutt
 mutt:$HOME/.mutt
@@ -35,7 +35,8 @@ muttator/muttatorrc:$HOME/.muttatorrc
 openbox:$HOME/.config/openbox
 
 # Ranger
-ranger:$HOME/.config/ranger
+ranger/rc.conf:$HOME/.config/ranger/rc.conf
+ranger/rifle.conf:$HOME/.config/ranger/rifle.conf
 
 # rofi
 rofi/config:$HOME/.config/rofi/config
@@ -49,11 +50,15 @@ rofi/dmenu.rasi:$HOME/.config/rofi/theme.rasi
 terminator:$HOME/.config/terminator
 
 # Tilda
-tilda:$HOME/.config/tilda
-# tilda_kali:$HOME/.config/tilda
+tilda/config_0:$HOME/.config/tilda/config_0
+# tilda_kali/config_0:$HOME/.config/tilda/config_0
 
 # Tint2
-tint2/aero_dark.conf:$HOME/.config/tint2/tint2rc
+# tint2/aero_dark.conf:$HOME/.config/tint2/tint2rc
+# tint2/aero_light.conf:$HOME/.config/tint2/tint2rc
+tint2/aero_trans.conf:$HOME/.config/tint2/tint2rc
+# tint2/material.conf:$HOME/.config/tint2/tint2rc
+# tint2/round.conf:$HOME/.config/tint2/tint2rc
 
 # top
 top/toprc:$HOME/.toprc
@@ -62,7 +67,8 @@ top/toprc:$HOME/.toprc
 vimperator/vimperatorrc:$HOME/.vimperatorrc
 
 # w3m
-w3m:$HOME/.w3m
+w3m/config:$HOME/.w3m/config
+w3m/mailcap:$HOME/.w3m/mailcap
 
 # X11
 x11/Xresources:$HOME/.Xresources
