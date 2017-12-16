@@ -54,10 +54,8 @@ link_status() {
             else
                 echo "[-] $to is not linked"
             fi
-        elif [[ -f $to ]]; then
-            echo "[-] $to is not a symlink"
         else
-            echo "[-] $to does not exist"
+            echo "[-] $to is not linked"
         fi
     done; unset entry
 }
