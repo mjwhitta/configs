@@ -73,12 +73,12 @@ xterm*utf8Title: true
 xterm*renderFont: true
 xterm*preeditType: Root
 xterm*xftAntialias: true
-xterm*faceName: Monospace:pixelsize=13
-xterm*faceNameDoublesize: Monospace:pixelsize=13
+xterm*faceName: Nimbus Mono PS:pixelsize=17
+xterm*faceNameDoublesize: Nimbus Mono PS:pixelsize=17
 
 ! Look and feel
 xterm*inputMethod:ibus
-xterm*termName: xterm-256color
+xterm*termName: screen-256color
 xterm*geometry: 80x25
 xterm*scrollBar: false
 xterm*loginshell: true

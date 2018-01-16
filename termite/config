@@ -1,0 +1,86 @@
+[options]
+allow_bold = false
+audible_bell = true
+clickable_url = true
+dynamic_title = true
+font = Nimbus Mono PS 13
+#fullscreen = true
+#geometry = 640x480
+icon_name = terminal
+#mouse_autohide = false
+scroll_on_output = true
+scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = -1
+search_wrap = true
+#urgent_on_bell = true
+#hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
+
+# "system", "on" or "off"
+cursor_blink = on
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+size_hints = false
+
+# "off", "left" or "right"
+scrollbar = off
+
+[colors]
+# If both of these are unset, cursor falls back to the foreground color,
+# and cursor_foreground falls back to the background color.
+cursor = #eeeeee
+cursor_foreground = #507fff
+
+foreground = #507fff
+# foreground_bold = #ffffff
+background = #323232
+
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
+
+# If unset, will reverse foreground and background
+highlight = #2f2f2f
+
+# Colors from color0 to color254 can be set
+color0 = #323232
+color1 = #ff50aa
+color2 = #7faa50
+color3 = #cccc50
+color4 = #507fff
+color5 = #aa7fff
+color6 = #50cccc
+color7 = #eeeeee
+color8 = #505050
+color9 = #ff50aa
+color10 = #7faa50
+color11 = #cccc50
+color12 = #507fff
+color13 = #aa7fff
+color14 = #50cccc
+color15 = #eeeeee
+
+[hints]
+font = Nimbus Mono PS 13
+foreground = #507fff
+background = #323232
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s

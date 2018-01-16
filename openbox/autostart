@@ -24,6 +24,9 @@ sleep 1
 ## Panel
 [ -z "$(command -v tint2)" ] || [ -f ~/.notint2 ] || tint2 &
 
+# Bluetooth applet
+[ -z "$(command -v blueman-applet)" ] || blueman-applet &
+
 # NetworkManager applet
 [ -z "$(command -v nm-applet)" ] || nm-applet &
 

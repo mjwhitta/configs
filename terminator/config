@@ -1,7 +1,7 @@
 [global_config]
   enabled_plugins = ,
   geometry_hinting = True
-  title_font = Monospace 13
+  title_font = Nimbus Mono PS 13
   title_use_system_font = False
 [keybindings]
   broadcast_all = None
@@ -69,7 +69,7 @@
     copy_on_selection = True
     cursor_color = "#ffffff"
     cursor_color_fg = False
-    font = Monospace 13
+    font = Nimbus Mono PS 13
     foreground_color = "#507fff"
     icon_bell = False
     palette = "#323232:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee:#505050:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee"
@@ -87,7 +87,7 @@
     cursor_color = "#ffffff"
     cursor_color_fg = False
     custom_command = [[ -n $(command -v tmux) ]] && [[ ! -f $HOME/.notmux ]] && [[ -z $TMUX ]] && tmux -2 new -A -s main || $SHELL
-    font = Monospace 13
+    font = Nimbus Mono PS 13
     foreground_color = "#507fff"
     icon_bell = False
     palette = "#323232:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee:#505050:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee"

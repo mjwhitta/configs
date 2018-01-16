@@ -49,6 +49,9 @@ rofi/dmenu.rasi:$HOME/.config/rofi/theme.rasi
 # Terminator
 terminator:$HOME/.config/terminator
 
+# Termite
+termite:$HOME/.config/termite
+
 # Tilda
 tilda/config_0:$HOME/.config/tilda/config_0
 # tilda_kali/config_0:$HOME/.config/tilda/config_0
