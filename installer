@@ -33,7 +33,6 @@ link() {
         echo "[+] Symlinking $from to $to"
         ln -s $from $to
     done; unset entry
-    # echo "[+] done"
     echo "[+] Successfully linked configs"
 }
 
@@ -61,6 +60,7 @@ link_status() {
 }
 
 unlink() {
+    echo "[+] Unlinking directories and files..."
     for entry in "${files[@]}"; do
         from="$here/${entry/:*/}"
         to="$(eval echo "${entry/*:/}")"
@@ -86,7 +86,6 @@ unlink() {
             echo "[!] Did not restore backup of $to"
         fi
     done; unset entry
-
     echo "[+] Successfully unlinked configs"
 }
 
