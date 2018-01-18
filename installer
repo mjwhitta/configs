@@ -26,14 +26,14 @@ link() {
             echo "[+] Removing file $to"
             rm -f $to
         else
-            echo "[+] Ensuring $(dirname $to) exists"
+            # echo "[+] Ensuring $(dirname $to) exists"
             mkdir -p $(dirname $to)
         fi
 
         echo "[+] Symlinking $from to $to"
         ln -s $from $to
     done; unset entry
-    echo "[+] done"
+    # echo "[+] done"
     echo "[+] Successfully linked configs"
 }
 
