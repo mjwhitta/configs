@@ -8,7 +8,8 @@
 # Should be written in sh
 
 # Capslock is Super
-[ ! -f ~/misc/bin/fix_capslock ] || ~/misc/bin/fix_capslock &
+xmodmap -e "remove Lock = Caps_Lock"
+xmodmap -e "keysym Caps_Lock = Super_L"
 
 ## Wallpaper
 [ -z "$(command -v nitrogen)" ] || nitrogen --restore &
@@ -48,8 +49,8 @@ sleep 1
 
 sleep 10
 
-# VNC Server
-[ -z "$(command -v x11vnc)" ] || x11vnc -usepw -display :0 -forever &
+# VNC Server (put in ~/.autostart.local if you want it)
+# [ -z "$(command -v x11vnc)" ] || x11vnc -usepw -display :0 -forever &
 
 # Local autostart script
 [ ! -f ~/.autostart.local ] || ~/.autostart.local
