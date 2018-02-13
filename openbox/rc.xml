@@ -41,34 +41,9 @@
             <action name="Execute">
                 <startupnotify>
                     <enabled>true</enabled>
-                    <name>gnome-screenshot</name>
+                    <name>Screenshot</name>
                 </startupnotify>
-                <command>gnome-screenshot</command>
-            </action>
-        </keybind>
-        <keybind key="XF86AudioLowerVolume">
-            <action name="Execute">
-                <command>amixer set Master 10%-</command>
-            </action>
-        </keybind>
-        <keybind key="XF86AudioMute">
-            <action name="Execute">
-                <command>amixer set Master toggle</command>
-            </action>
-        </keybind>
-        <keybind key="XF86AudioRaiseVolume">
-            <action name="Execute">
-                <command>amixer set Master 10%+</command>
-            </action>
-        </keybind>
-        <keybind key="XF86MonBrightnessDown">
-            <action name="Execute">
-                <command>xbacklight -10</command>
-            </action>
-        </keybind>
-        <keybind key="XF86MonBrightnessUp">
-            <action name="Execute">
-                <command>xbacklight +10</command>
+                <command>scrot</command>
             </action>
         </keybind>
         <keybind key="A-minus">
@@ -331,9 +306,9 @@
             <action name="Execute">
                 <startupnotify>
                     <enabled>true</enabled>
-                    <name>GVim</name>
+                    <name>Leafpad</name>
                 </startupnotify>
-                <command>gvim -f --cmd "chdir ~/code/"</command>
+                <command>leafpad</command>
             </action>
         </keybind>
         <keybind key="W-f">
