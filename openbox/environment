@@ -1,0 +1,48 @@
+# Ruby
+export GEM_HOME="$HOME/.gem/ruby"
+export GEM_PATH="$GEM_HOME/gems"
+
+# Go
+export GOPATH="$HOME/.go"
+export GOBIN="$GOPATH/bin"
+
+# Perl
+export PERL_LOCAL_LIB_ROOT="$HOME/.cpan/perl5"
+export PERL5LIB="$PERL_LOCAL_LIB_ROOT/lib/perl5"
+export PERL_MB_OPT="--install_base \"$PERL_LOCAL_LIB_ROOT\""
+export PERL_MM_OPT="INSTALL_BASE=$PERL_LOCAL_LIB_ROOT"
+
+# Find dirs that should be in PATH
+unset PTH
+for dir in \
+    $HOME/bin \
+    $GEM_HOME/bin \
+    $HOME/.local/bin \
+    $GOPATH \
+    $GOPATH/bin \
+    $PERL_LOCAL_LIB_ROOT/bin \
+    /usr/local/bin \
+    /usr/local/sbin \
+    /usr/bin \
+    /usr/sbin \
+    /bin \
+    /sbin \
+    /usr/bin/core_perl \
+    /usr/bin/vendor_perl \
+    $HOME/Android/Sdk/platform-tools \
+    $HOME/Android/Sdk/tools \
+    $HOME/Android/Sdk/tools/bin \
+    $HOME/Android/Ndk \
+    $HOME/.rvm/bin
+do
+    [[ ! -d $dir ]] || PTH="${PTH:+$PTH:}$dir"
+done; unset dir
+
+# Find missing from PATH
+while read -r dir; do
+    [[ ! -d $dir ]] || PTH="${PTH:+$PTH:}$dir"
+done < <(echo "${PATH//:/\n}" | grep -Ev "${PTH//:/|}"); unset dir
+
+# Set PATH
+[[ -z $PTH ]] || export PATH="$PTH"
+unset PTH

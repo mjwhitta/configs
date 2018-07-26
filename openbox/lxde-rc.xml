@@ -41,34 +41,9 @@
             <action name="Execute">
                 <startupnotify>
                     <enabled>true</enabled>
-                    <name>gnome-screenshot</name>
+                    <name>Screenshot</name>
                 </startupnotify>
-                <command>gnome-screenshot</command>
-            </action>
-        </keybind>
-        <keybind key="XF86AudioLowerVolume">
-            <action name="Execute">
-                <command>amixer set Master 10%-</command>
-            </action>
-        </keybind>
-        <keybind key="XF86AudioMute">
-            <action name="Execute">
-                <command>amixer set Master toggle</command>
-            </action>
-        </keybind>
-        <keybind key="XF86AudioRaiseVolume">
-            <action name="Execute">
-                <command>amixer set Master 10%+</command>
-            </action>
-        </keybind>
-        <keybind key="XF86MonBrightnessDown">
-            <action name="Execute">
-                <command>xbacklight -10</command>
-            </action>
-        </keybind>
-        <keybind key="XF86MonBrightnessUp">
-            <action name="Execute">
-                <command>xbacklight +10</command>
+                <command>screenshot</command>
             </action>
         </keybind>
         <keybind key="A-minus">
@@ -92,6 +67,7 @@
                     <action name="Raise"/>
                     <action name="Unshade"/>
                 </finalactions>
+                <raise>yes</raise>
             </action>
         </keybind>
         <keybind key="A-C-h">
@@ -167,6 +143,7 @@
                     <action name="Raise"/>
                     <action name="Unshade"/>
                 </finalactions>
+                <raise>yes</raise>
             </action>
         </keybind>
         <keybind key="C-q">
@@ -206,6 +183,15 @@
                     <name>Snap Right</name>
                 </startupnotify>
                 <command>~/bin/snap -r</command>
+            </action>
+        </keybind>
+        <keybind key="C-S-n">
+            <action name="Execute">
+                <startupnotify>
+                    <enabled>true</enabled>
+                    <name>Chromium Incognito</name>
+                </startupnotify>
+                <command>chromium --incognito</command>
             </action>
         </keybind>
         <keybind key="C-S-W-h">
@@ -266,6 +252,15 @@
                 <direction>right</direction>
             </action>
         </keybind>
+        <keybind key="W-S-t">
+            <action name="Execute">
+                <startupnotify>
+                    <enabled>true</enabled>
+                    <name>Terminal</name>
+                </startupnotify>
+                <command>term</command>
+            </action>
+        </keybind>
         <keybind key="W-1">
             <action name="GoToDesktop">
                 <to>1</to>
@@ -311,9 +306,9 @@
             <action name="Execute">
                 <startupnotify>
                     <enabled>true</enabled>
-                    <name>GVim</name>
+                    <name>Leafpad</name>
                 </startupnotify>
-                <command>gvim -f --cmd "chdir ~/code/"</command>
+                <command>leafpad</command>
             </action>
         </keybind>
         <keybind key="W-f">
@@ -326,10 +321,24 @@
             </action>
         </keybind>
         <keybind key="W-j">
-            <action name="NextWindow"/>
+            <action name="NextWindow">
+                <finalactions>
+                    <action name="Focus"/>
+                    <action name="Raise"/>
+                    <action name="Unshade"/>
+                </finalactions>
+                <raise>yes</raise>
+            </action>
         </keybind>
         <keybind key="W-k">
-            <action name="PreviousWindow"/>
+            <action name="PreviousWindow">
+                <finalactions>
+                    <action name="Focus"/>
+                    <action name="Raise"/>
+                    <action name="Unshade"/>
+                </finalactions>
+                <raise>yes</raise>
+            </action>
         </keybind>
         <keybind key="W-l">
             <action name="Execute">
@@ -355,16 +364,16 @@
                     <enabled>true</enabled>
                     <name>Terminal</name>
                 </startupnotify>
-                <command>x-terminal-emulator</command>
+                <command>term -e "tmux -2 new -A -s main"</command>
             </action>
         </keybind>
         <keybind key="W-w">
             <action name="Execute">
                 <startupnotify>
                     <enabled>true</enabled>
-                    <name>Iceweasel</name>
+                    <name>Chromium</name>
                 </startupnotify>
-                <command>iceweasel</command>
+                <command>chromium</command>
             </action>
         </keybind>
         <keybind key="W-x">
@@ -749,7 +758,7 @@
             <weight>Normal</weight>
         </font>
         <keepBorder>yes</keepBorder>
-        <name>Onyx</name>
+        <name>Clearlooks-3.4</name>
         <titleLayout>NDSLIMC</titleLayout>
     </theme>
 </openbox_config>
