@@ -113,20 +113,20 @@ unlink() {
 }
 
 usage() {
-    echo "Usage: ${0##*/} [OPTIONS] <action>"
-    echo "Options:"
-    echo "    -f, --force    Do not make backups"
-    echo "    -h, --help     Display this help message"
-    echo "    --nocolor      Disable colorized output"
-    echo
-    echo "Actions:"
-    echo "    link"
-    echo "        Back up existing configs and symlink new configs"
-    echo "    status"
-    echo "        Show what's linked and what isn't"
-    echo "    unlink"
-    echo "        Remove symlinks and restore old configs"
-    echo
+    cat <<EOF
+Usage: ${0##*/} [OPTIONS] <action>
+
+Options:
+    -f, --force    Do not make backups
+    -h, --help     Display this help message
+    --nocolor      Disable colorized output
+
+Actions:
+    link      Back up existing configs and symlink new configs
+    status    Show what's linked and what isn't
+    unlink    Remove symlinks and restore old configs
+
+EOF
     exit $1
 }
 

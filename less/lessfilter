@@ -20,52 +20,31 @@ esac
 
 # add all MIME types you want to handle here
 case "$(file --mime-type --brief --dereference --uncompress "$1")" in
-    "application/xml"|"image/svg+xml") lexer="xml"
-        ;;
-    "text/html") lexer="html"
-        ;;
-    "text/troff") lexer="nroff"
-        ;;
-    "text/x-c") lexer="c"
-        ;;
-    "text/x-c++") lexer="cpp"
-        ;;
-    "text/x-diff") lexer="diff"
-        ;;
-    "text/x-java") lexer="java"
-        ;;
-    "text/x-lua") lexer="lua"
-        ;;
-    "text/x-makefile") lexer="make"
-        ;;
-    "text/x-msdos-batch") lexer="bat"
-        ;;
-    "text/x-pascal") lexer="pascal"
-        ;;
-    "text/x-perl") lexer="perl"
-        ;;
-    "text/x-po") lexer="po"
-        ;;
-    "text/x-python") lexer="python"
-        ;;
-    "text/x-shellscript") lexer="sh"
-        ;;
-    "text/x-tex") lexer="latex"
-        ;;
+    "application/xml"|"image/svg+xml") lexer="xml" ;;
+    "text/html") lexer="html" ;;
+    "text/troff") lexer="nroff" ;;
+    "text/x-c") lexer="c" ;;
+    "text/x-c++") lexer="cpp" ;;
+    "text/x-diff") lexer="diff" ;;
+    "text/x-java") lexer="java" ;;
+    "text/x-lua") lexer="lua" ;;
+    "text/x-makefile") lexer="make" ;;
+    "text/x-msdos-batch") lexer="bat" ;;
+    "text/x-pascal") lexer="pascal" ;;
+    "text/x-perl") lexer="perl" ;;
+    "text/x-po") lexer="po" ;;
+    "text/x-python") lexer="python" ;;
+    "text/x-shellscript") lexer="sh" ;;
+    "text/x-tex") lexer="latex" ;;
 esac
 
 if [[ -z $lexer ]]; then
     case "$(head -n 1 "$1")" in
-        *perl*) lexer="perl"
-            ;;
-        *python*) lexer="python"
-            ;;
-        *ruby*) lexer="ruby"
-            ;;
-        *sh*) lexer="sh"
-            ;;
+        *perl*) lexer="perl" ;;
+        *python*) lexer="python" ;;
+        *ruby*) lexer="ruby" ;;
+        *sh*) lexer="sh" ;;
     esac
 fi
 
-[[ -n $lexer ]] && pygmentize -l $lexer "$1" && exit 0
-pygmentize -g "$1"
+pygmentize -g ${lexer:+-l $lexer} "$1"
