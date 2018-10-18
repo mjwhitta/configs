@@ -364,7 +364,9 @@
           <enabled>true</enabled>
           <name>Terminal</name>
         </startupnotify>
-        <command>term -e "tmux -2 new -A -s main"</command>
+        <command>
+          sh -c 'term -e "tmux -2 new -A -s $(hostname -s)"'
+        </command>
       </action>
     </keybind>
     <keybind key="W-w">
@@ -659,7 +661,9 @@
         <action name="Move"/>
       </mousebind>
     </context>
-    <context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
+    <context
+      name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner"
+    >
       <mousebind action="Press" button="Left">
         <action name="Focus"/>
         <action name="Raise"/>
