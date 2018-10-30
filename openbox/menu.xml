@@ -7,6 +7,6 @@
     <menu
         id="root-menu"
         label="obmenu-generator"
-        execute="/usr/bin/obmenu-generator -i"
+        execute="obmenu-generator -i"
     />
 </openbox_menu>
