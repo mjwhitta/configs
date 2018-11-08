@@ -101,7 +101,6 @@ fi
 # Wallpaper slideshow
 if [ -n "$(enabled wallpaper_slideshow)" ] &&
    [ -f "$HOME/bin/wallpaper_slideshow" ]; then
-then
     "$HOME/bin/wallpaper_slideshow" &
 fi
 
