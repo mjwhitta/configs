@@ -7,7 +7,7 @@
 
 # Should be written in sh
 function enabled() {
-    [ ! -f "$HOME/.config/openbox/flags/$1" ]] || echo "true"
+    [ ! -f "$HOME/.config/openbox/flags/$1" ] || echo "true"
 }
 
 # Capslock is Super
