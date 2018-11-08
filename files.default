@@ -34,6 +34,9 @@ muttator/muttatorrc:$HOME/.muttatorrc
 # Openbox
 openbox:$HOME/.config/openbox
 
+# LXQT
+lxqt:$HOME/.config/lxqt
+
 # Ranger
 ranger/rc.conf:$HOME/.config/ranger/rc.conf
 ranger/rifle.conf:$HOME/.config/ranger/rifle.conf
