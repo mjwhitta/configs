@@ -9,6 +9,9 @@ ctags:$HOME/.ctags
 # Dunst
 dunst/dunstrc:$HOME/.config/dunst/dunstrc
 
+# Flameshot
+Dharkael:$HOME/.config/Dharkael
+
 # GDB
 gdb:$HOME/.gdb
 gdb/gdbinit:$HOME/.gdbinit
