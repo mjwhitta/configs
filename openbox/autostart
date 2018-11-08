@@ -6,54 +6,113 @@
 # placed in /etc/xdg/autostart as global items
 
 # Should be written in sh
+function enabled() {
+    [ ! -f "$HOME/.config/openbox/flags/$1" ]] || echo "true"
+}
 
 # Capslock is Super
 xmodmap -e "remove Lock = Caps_Lock"
 xmodmap -e "keysym Caps_Lock = Super_L"
 
-## Wallpaper
-[ -z "$(command -v nitrogen)" ] || nitrogen --restore &
-
 ## Compositing
-if [ -n "$(command -v compton)" ] &&
-   [ -f ~/.config/compton.conf ]; then
-    compton ~/.config/compton.conf &
+if [ -n "$(enabled compton)" ] &&
+   [ -n "$(command -v compton)" ] &&
+   [ -f "$HOME/.config/compton.conf" ]; then
+    compton "$HOME/.config/compton.conf" &
+fi
+
+## Wallpaper (nitrogen)
+if [ -n "$(enabled nitrogen)" ] &&
+   [ -n "$(command -v nitrogen)" ]; then
+    nitrogen --restore &
 fi
 
 sleep 1
 
-## Panel
-[ -z "$(command -v tint2)" ] || [ -f ~/.notint2 ] || tint2 &
-
 # Bluetooth applet
-[ -z "$(command -v blueman-applet)" ] || blueman-applet &
+if [ -n "$(enabled blueman-applet)" ] &&
+   [ -n "$(command -v blueman-applet)" ]; then
+    blueman-applet &
+fi
+
+# Notifications (dunst)
+if [ -n "$(enabled dunst)" ] &&
+   [ -n "$(command -v dunst)" ]; then
+    dunst &
+fi
 
 # NetworkManager applet
-[ -z "$(command -v nm-applet)" ] || nm-applet &
+if [ -n "$(enabled nm-applet)" ] &&
+   [ -n "$(command -v nm-applet)" ]; then
+    nm-applet &
+fi
+
+# Numlock
+if [ -n "$(enabled numlockx)" ] &&
+   [ -n "$(command -v numlockx)" ]; then
+    numlockx &
+fi
 
 # Pulseaudio applet
-[ -z "$(command -v pa-applet)" ] || pa-applet &
+if [ -n "$(enabled pa-applet)" ] &&
+   [ -n "$(command -v pa-applet)" ]; then
+    pa-applet &
+fi
 
 # PCManFM is run in daemon-mode to enable auto-mounting of removable
 # media
-[ -z "$(command -v pcmanfm)" ] || pcmanfm -d &
+if [ -n "$(enabled pcmanfm)" ]; then
+    [ -z "$(command -v pcmanfm)" ] || pcmanfm -d &
+    [ -z "$(command -v pcmanfm-qt)" ] || pcmanfm-qt -d &
+fi
 
-# Screensaver
-[ -z "$(command -v xscreensaver)" ] || xscreensaver -no-splash &
+## Panel (tint2)
+if [ -n "$(enabled tint2)" ] &&
+   [ -n "$(command -v tint2)" ]; then
+    tint2 &
+fi
 
-# Notifications
-[ -z "$(command -v dunst)" ] || dunst &
-
-# Numlock
-[ -z "$(command -v numlockx)" ] || numlockx &
+# Xscreensaver
+if [ -n "$(enabled xscreensaver)" ] &&
+   [ -n "$(command -v xscreensaver)" ]; then
+    xscreensaver -no-splash &
+fi
 
 sleep 10
 
-# VNC Server (put in ~/.autostart.local if you want it)
-# [ -z "$(command -v x11vnc)" ] || x11vnc -usepw -display :0 -forever &
+# Flameshot
+if [ -n "$(enabled flameshot)" ] &&
+   [ -n "$(command -v flameshot)" ]; then
+    flameshot &
+fi
+
+# KeePassXC
+if [ -n "$(enabled keepassxc)" ] &&
+   [ -n "$(command -v keepassxc)" ]; then
+    keepassxc &
+fi
+
+# Tilda
+if [ -n "$(enabled tilda)" ] &&
+   [ -n "$(command -v tilda)" ]; then
+    tilda &
+fi
+
+# Wallpaper slideshow
+if [ -n "$(enabled wallpaper_slideshow)" ] &&
+   [ -f "$HOME/bin/wallpaper_slideshow" ]; then
+then
+    "$HOME/bin/wallpaper_slideshow" &
+fi
+
+# X11VNC
+if [ -n "$(enabled x11vnc)" ] &&
+   [ -n "$(command -v x11vnc)" ]; then
+    x11vnc -usepw -display :0 -forever &
+fi
 
 # Local autostart script
 [ ! -f ~/.autostart.local ] || ~/.autostart.local
 
 # Lockscreen b/c autologin
-[ ! -f ~/.lock_on_login ] || xscreensaver-command -lock &
+[ -z "$(enabled lock_on_login)" ] || xscreensaver-command -lock &
