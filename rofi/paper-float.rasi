@@ -1,116 +1,113 @@
 /**
- * A floating box version of the paper theme.
- *
+ * ROFI Color theme
  * User: Qball
  * Copyright: Dave Davenport
- */
-* {
-    blue:  #0000FF;
-    white: #FFFFFF;
-    black: #000000;
-    grey:  #eeeeee;
+ **/
 
-    spacing: 2;
+* {
+    anchor:           north;
     background-color: #00000000;
-    border-color: #444444FF;
-    anchor: north;
-    location: center;
+    black:            #000000;
+    blue:             #0000FF;
+    border-color:     #444444FF;
+    grey:             #eeeeee;
+    location:         center;
+    spacing:          2;
+    white:            #FFFFFF;
 }
 #window {
-    transparency: "screenshot";
     background-color: #00000000;
-    border: 0;
-    padding: 0% 0% 1em 0%;
-    x-offset: 0;
-    y-offset: -10%;
+    border:           0;
+    padding:          0% 0% 1em 0%;
+    transparency:     "screenshot";
+    x-offset:         0;
+    y-offset:         -10%;
 }
 #mainbox {
+    border:  0;
     padding: 0px;
-    border: 0;
     spacing: 1%;
 }
 #message {
-    border: 2px;
-    padding: 1em;
     background-color: @white;
-    text-color: @back;
+    border:           2px;
+    padding:          1em;
+    text-color:       @back;
 }
 #textbox normal {
+    border:     0;
+    padding:    0;
     text-color: #002B36FF;
-    padding: 0;
-    border: 0;
 }
 #listview {
-    fixed-height: 1;
-    border: 2px;
-    padding: 1em;
-    reverse: false;
-
-    columns: 1;
     background-color: @white;
+    border:           2px;
+    columns:          1;
+    fixed-height:     1;
+    padding:          1em;
+    reverse:          false;
 }
 #element {
-    border: 0;
-    padding: 2px;
+    border:    0;
     highlight: bold ;
+    padding:   2px;
 }
 #element normal.normal {
-    text-color: #002B36FF;
     background-color: #F5F5F500;
+    text-color:       #002B36FF;
 }
 #element normal.urgent {
-    text-color: #D75F00FF;
     background-color: #F5F5F5FF;
+    text-color:       #D75F00FF;
 }
 #element normal.active {
-    text-color: #005F87FF;
     background-color: #F5F5F5FF;
+    text-color:       #005F87FF;
 }
 #element selected.normal {
-    text-color: #F5F5F5FF;
     background-color: #4271AEFF;
+    text-color:       #F5F5F5FF;
 }
 #element selected.urgent {
-    text-color: #F5F5F5FF;
     background-color: #D75F00FF;
+    text-color:       #F5F5F5FF;
 }
 #element selected.active {
-    text-color: #F5F5F5FF;
     background-color: #005F87FF;
+    text-color:       #F5F5F5FF;
 }
 #element alternate.normal {
-    text-color: #002B36FF;
     background-color: #D0D0D0FF;
+    text-color:       #002B36FF;
 }
 #element alternate.urgent {
-    text-color: #D75F00FF;
     background-color: #D0D0D0FF;
+    text-color:       #D75F00FF;
 }
 #element alternate.active {
-    text-color: #005F87FF;
     background-color: #D0D0D0FF;
+    text-color:       #005F87FF;
 }
 #scrollbar {
-    border: 0;
+    border:  0;
     padding: 0;
 }
 #inputbar {
-    spacing: 0;
-    border: 2px;
-    padding: 0.5em 1em;
     background-color: @grey;
-    index: 0;
+    border:           2px;
+    index:            0;
+    padding:          0.5em 1em;
+    spacing:          0;
 }
 #inputbar normal {
-    foreground-color: #002B36FF;
     background-color: #F5F5F500;
+    foreground-color: #002B36FF;
 }
-
 #sidebar {
-    border: 2px;
-    padding: 0.5em 1em;
     background-color: @grey;
-    index: 10;
+    border:           2px;
+    index:            10;
+    padding:          0.5em 1em;
 }
 #button selected {
     text-color: #4271AEFF;
