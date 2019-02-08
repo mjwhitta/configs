@@ -12,20 +12,20 @@ xterm*foreground: #507fff
 ! milesrc normal colors
 xterm*color0: #323232
 xterm*color1: #ff50aa
-xterm*color2: #7faa50
-xterm*color3: #cccc50
+xterm*color2: #50aa00
+xterm*color3: #ccaa50
 xterm*color4: #507fff
 xterm*color5: #aa7fff
 xterm*color6: #50cccc
-xterm*color7: #eeeeee
+xterm*color7: #cccccc
 ! milesrc bright colors
 xterm*color8: #505050
-xterm*color9: #ff50aa
-xterm*color10: #7faa50
+xterm*color9: #ff7fff
+xterm*color10: #50cc50
 xterm*color11: #cccc50
-xterm*color12: #507fff
-xterm*color13: #aa7fff
-xterm*color14: #50cccc
+xterm*color12: #50aaff
+xterm*color13: #aaaaff
+xterm*color14: #50eecc
 xterm*color15: #eeeeee
 
 ! Solarized normal colors

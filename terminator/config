@@ -72,7 +72,7 @@
     font = DejaVu Sans Mono 11
     foreground_color = "#507fff"
     icon_bell = False
-    palette = "#323232:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee:#505050:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee"
+    palette = "#323232:#ff50aa:#50aa00:#ccaa50:#507fff:#aa7fff:#50cccc:#cccccc:#505050:#ff7fff:#50cc50:#cccc50:#50aaff:#aaaaff:#50eecc:#eeeeee"
     scroll_on_output = True
     scrollback_infinite = True
     scrollbar_position = hidden
@@ -90,7 +90,7 @@
     font = DejaVu Sans Mono 11
     foreground_color = "#507fff"
     icon_bell = False
-    palette = "#323232:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee:#505050:#ff50aa:#7faa50:#cccc50:#507fff:#aa7fff:#50cccc:#eeeeee"
+    palette = "#323232:#ff50aa:#50aa00:#ccaa50:#507fff:#aa7fff:#50cccc:#cccccc:#505050:#ff7fff:#50cc50:#cccc50:#50aaff:#aaaaff:#50eecc:#eeeeee"
     scroll_on_output = True
     scrollback_infinite = True
     scrollbar_position = hidden

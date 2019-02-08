@@ -7,21 +7,21 @@
 var theme = {
   "black": "#323232",
   "red": "#ff50aa",
-  "green": "#7faa50",
-  "yellow": "#cccc50",
+  "green": "#50aa00",
+  "yellow": "#ccaa50",
   "blue": "#507fff",
   "magenta": "#aa7fff",
   "cyan": "#50cccc",
-  "white": "#eeeeee",
+  "white": "#cccccc",
   "light_black": "#505050",
-  "light_red": "#ff50aa",
-  "light_green": "#7faa50",
+  "light_red": "#ff7fff",
+  "light_green": "#50cc50",
   "light_yellow": "#cccc50",
-  "light_blue": "#507fff",
-  "light_magenta": "#aa7fff",
-  "light_cyan": "#50cccc",
+  "light_blue": "#50aaff",
+  "light_magenta": "#aaaaff",
+  "light_cyan": "#50eecc",
   "light_white": "#eeeeee",
-  "cursor": "#ffffff"
+  "cursor": "#eeeeee"
 };
 
 // Disable bold

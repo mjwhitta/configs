@@ -52,28 +52,28 @@ background = #323232
 #background = rgba(63, 63, 63, 0.8)
 
 # If unset, will reverse foreground and background
-highlight = #2f2f2f
+# highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
 color0 = #323232
 color1 = #ff50aa
-color2 = #7faa50
-color3 = #cccc50
+color2 = #50aa00
+color3 = #ccaa50
 color4 = #507fff
 color5 = #aa7fff
 color6 = #50cccc
-color7 = #eeeeee
+color7 = #cccccc
 color8 = #505050
-color9 = #ff50aa
-color10 = #7faa50
+color9 = #ff7fff
+color10 = #50cc50
 color11 = #cccc50
-color12 = #507fff
-color13 = #aa7fff
-color14 = #50cccc
+color12 = #50aaff
+color13 = #aaaaff
+color14 = #50eecc
 color15 = #eeeeee
 
 [hints]
-font = Nimbus Mono PS 13
+font = DejaVu Sans Mono 11
 foreground = #507fff
 background = #323232
 #active_foreground = #e68080
