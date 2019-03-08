@@ -86,7 +86,7 @@
     copy_on_selection = True
     cursor_color = "#ffffff"
     cursor_color_fg = False
-    custom_command = [[ -n $(command -v tmux) ]] && [[ ! -f $HOME/.notmux ]] && [[ -z $TMUX ]] && tmux -2 new -A -s main || $SHELL
+    custom_command = [[ -n $(command -v tmux) ]] && [[ ! -f $HOME/.notmux ]] && [[ -z $TMUX ]] && tmux -2 new -A -s $(hostname) || $SHELL
     font = DejaVu Sans Mono 11
     foreground_color = "#507fff"
     icon_bell = False
