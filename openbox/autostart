@@ -50,7 +50,7 @@ fi
 # Numlock
 if [ -n "$(enabled numlockx)" ] &&
    [ -n "$(command -v numlockx)" ]; then
-    numlockx &
+    numlockx on &
 fi
 
 # Pulseaudio applet
