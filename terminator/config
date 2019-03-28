@@ -98,3 +98,20 @@
     use_custom_command = True
     use_system_font = False
     word_chars = "-A-Za-z0-9,./?%&#_"
+  [[light]]
+    allow_bold = False
+    audible_bell = True
+    background_color = "#eeeeee"
+    copy_on_selection = True
+    cursor_color = "#ffffff"
+    cursor_color_fg = False
+    font = DejaVu Sans Mono 11
+    foreground_color = "#507fff"
+    icon_bell = False
+    palette = "#323232:#ff50aa:#50aa00:#ccaa50:#507fff:#aa7fff:#50cccc:#cccccc:#505050:#ff7fff:#50cc50:#cccc50:#50aaff:#aaaaff:#50eecc:#eeeeee"
+    scroll_on_output = True
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+    word_chars = "-A-Za-z0-9,./?%&#_"
