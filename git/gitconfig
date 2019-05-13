@@ -1,6 +1,6 @@
 [user]
     name = Miles Whittaker
-    email = mjwhitta@gmail.com
+    email = mj@whitta.dev
 [core]
     filemode = false
     attributesfile = ~/.gitattributes
