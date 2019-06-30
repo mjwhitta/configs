@@ -125,18 +125,18 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Snap Bottom Left</name>
+          <name>Snap Top Left</name>
         </startupnotify>
-        <command>~/bin/snap --bottom-left</command>
+        <command>~/bin/snap --top-left</command>
       </action>
     </keybind>
     <keybind key="A-S-bracketright">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Snap Bottom Right</name>
+          <name>Snap Top Right</name>
         </startupnotify>
-        <command>~/bin/snap --bottom-right</command>
+        <command>~/bin/snap --top-right</command>
       </action>
     </keybind>
     <keybind key="A-space">
@@ -164,26 +164,53 @@
         <raise>yes</raise>
       </action>
     </keybind>
-    <keybind key="A-Mod4-bracketleft">
+    <keybind key="C-bracketleft">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Snap Top Left</name>
+          <name>Snap Top</name>
         </startupnotify>
-        <command>~/bin/snap --top-left</command>
+        <command>~/bin/snap -t</command>
       </action>
     </keybind>
-    <keybind key="A-W-bracketright">
+    <keybind key="C-bracketright">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Snap Top Right</name>
+          <name>Snap Bottom</name>
         </startupnotify>
-        <command>~/bin/snap --top-right</command>
+        <command>~/bin/snap -b</command>
       </action>
     </keybind>
     <keybind key="C-q">
       <action name="Close"/>
+    </keybind>
+    <keybind key="C-S-bracketleft">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Snap Bottom Left</name>
+        </startupnotify>
+        <command>~/bin/snap --bottom-left</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-bracketright">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Snap Bottom Right</name>
+        </startupnotify>
+        <command>~/bin/snap --bottom-right</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-c">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Snap Center</name>
+        </startupnotify>
+        <command>~/bin/snap -c</command>
+      </action>
     </keybind>
     <keybind key="C-S-n">
       <action name="Execute">
@@ -221,33 +248,6 @@
     <keybind key="W-4">
       <action name="GoToDesktop">
         <to>4</to>
-      </action>
-    </keybind>
-    <keybind key="W-bracketleft">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Top</name>
-        </startupnotify>
-        <command>~/bin/snap -t</command>
-      </action>
-    </keybind>
-    <keybind key="W-bracketright">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Bottom</name>
-        </startupnotify>
-        <command>~/bin/snap -b</command>
-      </action>
-    </keybind>
-    <keybind key="W-c">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Center</name>
-        </startupnotify>
-        <command>~/bin/snap -c</command>
       </action>
     </keybind>
     <keybind key="W-d">
