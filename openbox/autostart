@@ -106,8 +106,16 @@ fi
 
 # X11VNC
 if [ -n "$(enabled x11vnc)" ] &&
-   [ -n "$(command -v x11vnc)" ]; then
-    x11vnc -usepw -display :0 -forever &
+   [ -n "$(command -v x11vnc)" ] &&
+   [ -f "$HOME/.vnc/passwd" ]; then
+    if [ ! -f "$HOME/.x11vnc" ]; then
+        cat >"$HOME/.x11vnc"<<EOF
+-create
+-nevershared
+-usepw
+EOF
+    fi
+    (while [ ! -f "/tmp/.stop_x11vnc" ]; do x11vnc; sleep 1; done) &
 fi
 
 # Local autostart script
