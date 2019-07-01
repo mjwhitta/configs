@@ -221,39 +221,30 @@
         <command>chromium --incognito</command>
       </action>
     </keybind>
-    <keybind key="Print">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Screenshot</name>
-        </startupnotify>
-        <command>screenshot</command>
-      </action>
-    </keybind>
-    <keybind key="W-1">
+    <keybind key="Mod4-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-2">
+    <keybind key="Mod4-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-3">
+    <keybind key="Mod4-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-4">
+    <keybind key="Mod4-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="Mod4-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-    <keybind key="W-e">
+    <keybind key="Mod4-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -262,7 +253,7 @@
         <command>leafpad</command>
       </action>
     </keybind>
-    <keybind key="W-f">
+    <keybind key="Mod4-f">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -271,7 +262,7 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
-    <keybind key="W-j">
+    <keybind key="Mod4-j">
       <action name="NextWindow">
         <finalactions>
           <action name="Focus"/>
@@ -281,7 +272,7 @@
         <raise>yes</raise>
       </action>
     </keybind>
-    <keybind key="W-k">
+    <keybind key="Mod4-k">
       <action name="PreviousWindow">
         <finalactions>
           <action name="Focus"/>
@@ -291,7 +282,7 @@
         <raise>yes</raise>
       </action>
     </keybind>
-    <keybind key="W-l">
+    <keybind key="Mod4-l">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -300,7 +291,7 @@
         <command>xscreensaver-command -lock</command>
       </action>
     </keybind>
-    <keybind key="W-r">
+    <keybind key="Mod4-r">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -309,47 +300,47 @@
         <command>~/bin/alfred</command>
       </action>
     </keybind>
-    <keybind key="W-S-1">
+    <keybind key="Mod4-S-1">
       <action name="SendToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-S-2">
+    <keybind key="Mod4-S-2">
       <action name="SendToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-S-3">
+    <keybind key="Mod4-S-3">
       <action name="SendToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-S-4">
+    <keybind key="Mod4-S-4">
       <action name="SendToDesktop">
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-S-h">
+    <keybind key="Mod4-S-h">
       <action name="DirectionalCycleWindows">
         <direction>left</direction>
       </action>
     </keybind>
-    <keybind key="W-S-j">
+    <keybind key="Mod4-S-j">
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
       </action>
     </keybind>
-    <keybind key="W-S-k">
+    <keybind key="Mod4-S-k">
       <action name="DirectionalCycleWindows">
         <direction>up</direction>
       </action>
     </keybind>
-    <keybind key="W-S-l">
+    <keybind key="Mod4-S-l">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
       </action>
     </keybind>
-    <keybind key="W-S-t">
+    <keybind key="Mod4-S-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -358,7 +349,7 @@
         <command>term</command>
       </action>
     </keybind>
-    <keybind key="W-t">
+    <keybind key="Mod4-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -369,7 +360,7 @@
         </command>
       </action>
     </keybind>
-    <keybind key="W-w">
+    <keybind key="Mod4-w">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -378,13 +369,22 @@
         <command>chromium</command>
       </action>
     </keybind>
-    <keybind key="W-x">
+    <keybind key="Mod4-x">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>oblogout</name>
         </startupnotify>
         <command>oblogout</command>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Screenshot</name>
+        </startupnotify>
+        <command>screenshot</command>
       </action>
     </keybind>
   </keyboard>
