@@ -36,6 +36,7 @@ muttator/muttatorrc:$HOME/.muttatorrc
 
 # Openbox
 openbox:$HOME/.config/openbox
+openbox/openbox-rc.xml:$HOME/.config/openbox/rc.xml
 
 # LXQT
 lxqt:$HOME/.config/lxqt
