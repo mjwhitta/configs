@@ -43,7 +43,7 @@
           <enabled>true</enabled>
           <name>Snap Left</name>
         </startupnotify>
-        <command>~/bin/snap -l</command>
+        <command>snap -l</command>
       </action>
     </keybind>
     <keybind key="A-bracketright">
@@ -52,7 +52,7 @@
           <enabled>true</enabled>
           <name>Snap Right</name>
         </startupnotify>
-        <command>~/bin/snap -r</command>
+        <command>snap -r</command>
       </action>
     </keybind>
     <keybind key="A-C-h">
@@ -109,7 +109,7 @@
           <enabled>true</enabled>
           <name>Minimize</name>
         </startupnotify>
-        <command>~/bin/snap -n</command>
+        <command>snap -n</command>
       </action>
     </keybind>
     <keybind key="A-plus">
@@ -118,7 +118,7 @@
           <enabled>true</enabled>
           <name>Maximize</name>
         </startupnotify>
-        <command>~/bin/snap -m</command>
+        <command>snap -m</command>
       </action>
     </keybind>
     <keybind key="A-S-bracketleft">
@@ -127,7 +127,7 @@
           <enabled>true</enabled>
           <name>Snap Top Left</name>
         </startupnotify>
-        <command>~/bin/snap --top-left</command>
+        <command>snap --top-left</command>
       </action>
     </keybind>
     <keybind key="A-S-bracketright">
@@ -136,7 +136,7 @@
           <enabled>true</enabled>
           <name>Snap Top Right</name>
         </startupnotify>
-        <command>~/bin/snap --top-right</command>
+        <command>snap --top-right</command>
       </action>
     </keybind>
     <keybind key="A-space">
@@ -170,7 +170,7 @@
           <enabled>true</enabled>
           <name>Snap Top</name>
         </startupnotify>
-        <command>~/bin/snap -t</command>
+        <command>snap -t</command>
       </action>
     </keybind>
     <keybind key="C-bracketright">
@@ -179,7 +179,7 @@
           <enabled>true</enabled>
           <name>Snap Bottom</name>
         </startupnotify>
-        <command>~/bin/snap -b</command>
+        <command>snap -b</command>
       </action>
     </keybind>
     <keybind key="C-q">
@@ -191,7 +191,7 @@
           <enabled>true</enabled>
           <name>Snap Bottom Left</name>
         </startupnotify>
-        <command>~/bin/snap --bottom-left</command>
+        <command>snap --bottom-left</command>
       </action>
     </keybind>
     <keybind key="C-S-bracketright">
@@ -200,7 +200,7 @@
           <enabled>true</enabled>
           <name>Snap Bottom Right</name>
         </startupnotify>
-        <command>~/bin/snap --bottom-right</command>
+        <command>snap --bottom-right</command>
       </action>
     </keybind>
     <keybind key="C-S-c">
@@ -209,7 +209,7 @@
           <enabled>true</enabled>
           <name>Snap Center</name>
         </startupnotify>
-        <command>~/bin/snap -c</command>
+        <command>snap -c</command>
       </action>
     </keybind>
     <keybind key="C-S-n">
@@ -297,7 +297,7 @@
           <enabled>true</enabled>
           <name>alfred</name>
         </startupnotify>
-        <command>~/bin/alfred</command>
+        <command>alfred</command>
       </action>
     </keybind>
     <keybind key="Mod4-S-1">
