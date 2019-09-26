@@ -101,8 +101,8 @@ fi
 
 # Wallpaper slideshow
 if [ -n "$(enabled wallpaper_slideshow)" ] &&
-   [ -f "$HOME/bin/wallpaper_slideshow" ]; then
-    "$HOME/bin/wallpaper_slideshow" &
+   [ -f "$HOME/.local/bin/wallpaper_slideshow" ]; then
+    "$HOME/.local/bin/wallpaper_slideshow" &
 fi
 
 # X11VNC
