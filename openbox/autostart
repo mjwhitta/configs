@@ -13,6 +13,7 @@ function enabled() {
 # Capslock is Mod4
 xmodmap -e "remove lock = Caps_Lock"
 xmodmap -e "add mod4 = Caps_Lock"
+xmodmap -e "keysym Caps_Lock = Super_L"
 
 ## Compositing
 if [ -n "$(enabled compton)" ] &&
