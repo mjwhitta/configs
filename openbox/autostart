@@ -42,6 +42,18 @@ if [ -n "$(enabled dunst)" ] &&
     dunst &
 fi
 
+# Notifications (lxqt)
+if [ -n "$(enabled lxqt-notificationd)" ] &&
+   [ -n "$(command -v lxqt-notificationd)" ]; then
+    lxqt-notificationd &
+fi
+
+# Notifications (notification-daemon)
+if [ -n "$(enabled notification-daemon)" ] &&
+   [ -f /usr/lib/notification-daemon-1.0/notification-daemon ]; then
+    /usr/lib/notification-daemon-1.0/notification-daemon &
+fi
+
 # NetworkManager applet
 if [ -n "$(enabled nm-applet)" ] &&
    [ -n "$(command -v nm-applet)" ]; then

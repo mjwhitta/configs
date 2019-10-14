@@ -292,20 +292,24 @@
 #    appname = Pidgin
 #    summary = "*signed on*"
 #    urgency = low
-#
+
 #[signed_off]
 #    appname = Pidgin
 #    summary = *signed off*
 #    urgency = low
-#
+
 #[says]
 #    appname = Pidgin
 #    summary = *says*
 #    urgency = critical
-#
+
 #[twitter]
 #    appname = Pidgin
 #    summary = *twitter.com*
 #    urgency = normal
-#
+
+#[logging]
+#    summary = "*"
+#    script = /tmp/log_to_file.sh
+
 # vim: ft=cfg
