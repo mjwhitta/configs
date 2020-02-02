@@ -2,7 +2,7 @@
     name = Miles Whittaker
     email = mj@whitta.dev
 [core]
-    filemode = false
+    filemode = true
     attributesfile = ~/.gitattributes
     excludesfile = ~/.cvsignore
 [merge]
