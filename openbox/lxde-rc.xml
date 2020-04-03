@@ -37,37 +37,22 @@
   </focus>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key="Print">
+    <keybind key="A-bracketleft">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Screenshot</name>
+          <name>Snap Left</name>
         </startupnotify>
-        <command>screenshot</command>
+        <command>snap -l</command>
       </action>
     </keybind>
-    <keybind key="A-minus">
+    <keybind key="A-bracketright">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Minimize</name>
+          <name>Snap Right</name>
         </startupnotify>
-        <command>snap -n</command>
-      </action>
-    </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="A-Tab">
-      <action name="NextWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-        <raise>yes</raise>
+        <command>snap -r</command>
       </action>
     </keybind>
     <keybind key="A-C-h">
@@ -100,24 +85,6 @@
         <wrap>yes</wrap>
       </action>
     </keybind>
-    <keybind key="A-S-bracketleft">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Bottom Left</name>
-        </startupnotify>
-        <command>snap --bottom-left</command>
-      </action>
-    </keybind>
-    <keybind key="A-S-bracketright">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Bottom Right</name>
-        </startupnotify>
-        <command>snap --bottom-right</command>
-      </action>
-    </keybind>
     <keybind key="A-C-S-Left">
       <action name="SendToDesktop">
         <to>left</to>
@@ -136,149 +103,13 @@
         <wrap>yes</wrap>
       </action>
     </keybind>
-    <keybind key="A-S-Tab">
-      <action name="PreviousWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-        <raise>yes</raise>
-      </action>
-    </keybind>
-    <keybind key="C-q">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="A-bracketleft">
+    <keybind key="A-minus">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Snap Left</name>
+          <name>Minimize</name>
         </startupnotify>
-        <command>snap -l</command>
-      </action>
-    </keybind>
-    <keybind key="W-bracketright">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Bottom</name>
-        </startupnotify>
-        <command>snap -b</command>
-      </action>
-    </keybind>
-    <keybind key="W-bracketleft">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Top</name>
-        </startupnotify>
-        <command>snap -t</command>
-      </action>
-    </keybind>
-    <keybind key="A-bracketright">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Right</name>
-        </startupnotify>
-        <command>snap -r</command>
-      </action>
-    </keybind>
-    <keybind key="C-S-n">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Chromium Incognito</name>
-        </startupnotify>
-        <command>chromium --incognito</command>
-      </action>
-    </keybind>
-    <keybind key="A-W-bracketleft">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Top Left</name>
-        </startupnotify>
-        <command>snap --top-left</command>
-      </action>
-    </keybind>
-    <keybind key="A-W-bracketright">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Snap Top Right</name>
-        </startupnotify>
-        <command>snap --top-right</command>
-      </action>
-    </keybind>
-    <keybind key="S-W-1">
-      <action name="SendToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="S-W-2">
-      <action name="SendToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="S-W-3">
-      <action name="SendToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="S-W-4">
-      <action name="SendToDesktop">
-        <to>4</to>
-      </action>
-    </keybind>
-    <keybind key="S-W-h">
-      <action name="DirectionalCycleWindows">
-        <direction>left</direction>
-      </action>
-    </keybind>
-    <keybind key="S-W-j">
-      <action name="DirectionalCycleWindows">
-        <direction>down</direction>
-      </action>
-    </keybind>
-    <keybind key="S-W-k">
-      <action name="DirectionalCycleWindows">
-        <direction>up</direction>
-      </action>
-    </keybind>
-    <keybind key="S-W-l">
-      <action name="DirectionalCycleWindows">
-        <direction>right</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-t">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Terminal</name>
-        </startupnotify>
-        <command>term</command>
-      </action>
-    </keybind>
-    <keybind key="W-1">
-      <action name="GoToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="W-2">
-      <action name="GoToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-3">
-      <action name="GoToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="W-4">
-      <action name="GoToDesktop">
-        <to>4</to>
+        <command>snap -n</command>
       </action>
     </keybind>
     <keybind key="A-plus">
@@ -290,47 +121,30 @@
         <command>snap -m</command>
       </action>
     </keybind>
-    <keybind key="W-c">
+    <keybind key="A-S-bracketleft">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Snap Center</name>
+          <name>Snap Top Left</name>
         </startupnotify>
-        <command>snap -c</command>
+        <command>snap --top-left</command>
       </action>
     </keybind>
-    <keybind key="W-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
-    <keybind key="W-e">
+    <keybind key="A-S-bracketright">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Leafpad</name>
+          <name>Snap Top Right</name>
         </startupnotify>
-        <command>leafpad</command>
+        <command>snap --top-right</command>
       </action>
     </keybind>
-    <keybind key="W-f">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>PCManFM</name>
-        </startupnotify>
-        <command>pcmanfm</command>
+    <keybind key="A-space">
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-j">
-      <action name="NextWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-        <raise>yes</raise>
-      </action>
-    </keybind>
-    <keybind key="W-k">
+    <keybind key="A-S-Tab">
       <action name="PreviousWindow">
         <finalactions>
           <action name="Focus"/>
@@ -340,7 +154,135 @@
         <raise>yes</raise>
       </action>
     </keybind>
-    <keybind key="W-l">
+    <keybind key="A-Tab">
+      <action name="NextWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+        <raise>yes</raise>
+      </action>
+    </keybind>
+    <keybind key="C-bracketleft">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Snap Top</name>
+        </startupnotify>
+        <command>snap -t</command>
+      </action>
+    </keybind>
+    <keybind key="C-bracketright">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Snap Bottom</name>
+        </startupnotify>
+        <command>snap -b</command>
+      </action>
+    </keybind>
+    <keybind key="C-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="C-S-bracketleft">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Snap Bottom Left</name>
+        </startupnotify>
+        <command>snap --bottom-left</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-bracketright">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Snap Bottom Right</name>
+        </startupnotify>
+        <command>snap --bottom-right</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-c">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Snap Center</name>
+        </startupnotify>
+        <command>snap -c</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-n">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Chromium Incognito</name>
+        </startupnotify>
+        <command>chromium --incognito</command>
+      </action>
+    </keybind>
+    <keybind key="Mod4-1">
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="Mod4-2">
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="Mod4-3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="Mod4-4">
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="Mod4-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+    <keybind key="Mod4-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Leafpad</name>
+        </startupnotify>
+        <command>leafpad</command>
+      </action>
+    </keybind>
+    <keybind key="Mod4-f">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>PCManFM</name>
+        </startupnotify>
+        <command>pcmanfm</command>
+      </action>
+    </keybind>
+    <keybind key="Mod4-j">
+      <action name="NextWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+        <raise>yes</raise>
+      </action>
+    </keybind>
+    <keybind key="Mod4-k">
+      <action name="PreviousWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+        <raise>yes</raise>
+      </action>
+    </keybind>
+    <keybind key="Mod4-l">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -349,7 +291,7 @@
         <command>xscreensaver-command -lock</command>
       </action>
     </keybind>
-    <keybind key="W-r">
+    <keybind key="Mod4-r">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -358,7 +300,56 @@
         <command>alfred</command>
       </action>
     </keybind>
-    <keybind key="W-t">
+    <keybind key="Mod4-S-1">
+      <action name="SendToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="Mod4-S-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="Mod4-S-3">
+      <action name="SendToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="Mod4-S-4">
+      <action name="SendToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="Mod4-S-h">
+      <action name="DirectionalCycleWindows">
+        <direction>left</direction>
+      </action>
+    </keybind>
+    <keybind key="Mod4-S-j">
+      <action name="DirectionalCycleWindows">
+        <direction>down</direction>
+      </action>
+    </keybind>
+    <keybind key="Mod4-S-k">
+      <action name="DirectionalCycleWindows">
+        <direction>up</direction>
+      </action>
+    </keybind>
+    <keybind key="Mod4-S-l">
+      <action name="DirectionalCycleWindows">
+        <direction>right</direction>
+      </action>
+    </keybind>
+    <keybind key="Mod4-S-t">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>term</command>
+      </action>
+    </keybind>
+    <keybind key="Mod4-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -369,7 +360,7 @@
         </command>
       </action>
     </keybind>
-    <keybind key="W-w">
+    <keybind key="Mod4-w">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -378,13 +369,13 @@
         <command>chromium</command>
       </action>
     </keybind>
-    <keybind key="W-x">
+    <keybind key="Print">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>lxde-logout</name>
+          <name>Screenshot</name>
         </startupnotify>
-        <command>lxde-logout</command>
+        <command>screenshot</command>
       </action>
     </keybind>
   </keyboard>
