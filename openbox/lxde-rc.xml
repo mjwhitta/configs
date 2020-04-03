@@ -717,37 +717,37 @@
   <theme>
     <animateIconify>yes</animateIconify>
     <font place="ActiveOnScreenDisplay">
-      <name>Monospace</name>
+      <name>DejaVu Sans Mono</name>
       <size>9</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="ActiveWindow">
-      <name>Monospace</name>
+      <name>DejaVu Sans Mono</name>
       <size>10</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Monospace</name>
+      <name>DejaVu Sans Mono</name>
       <size>9</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="InactiveWindow">
-      <name>Monospace</name>
+      <name>DejaVu Sans Mono</name>
       <size>10</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="MenuHeader">
-      <name>Monospace</name>
+      <name>DejaVu Sans Mono</name>
       <size>9</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="MenuItem">
-      <name>Monospace</name>
+      <name>DejaVu Sans Mono</name>
       <size>9</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
