@@ -28,6 +28,11 @@ htop/htoprc:$HOME/.config/htop/htoprc
 # Less
 less/lessfilter:$HOME/.config/less/lessfilter
 
+# LXQT
+lxqt:$HOME/.config/lxqt
+lxqt/lxqt-rc.xml:$HOME/.config/openbox/lxqt-rc.xml
+lxqt/xprofile:$HOME/.xprofile
+
 # Mutt
 mutt:$HOME/.mutt
 
@@ -37,11 +42,6 @@ muttator/muttatorrc:$HOME/.muttatorrc
 # Openbox
 openbox:$HOME/.config/openbox
 openbox/openbox-rc.xml:$HOME/.config/openbox/rc.xml
-
-# LXQT
-lxqt:$HOME/.config/lxqt
-lxqt/lxqt-rc.xml:$HOME/.config/openbox/lxqt-rc.xml
-lxqt/xprofile:$HOME/.xprofile
 
 # Ranger
 ranger/rc.conf:$HOME/.config/ranger/rc.conf
