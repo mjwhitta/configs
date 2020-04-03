@@ -40,6 +40,8 @@ openbox/openbox-rc.xml:$HOME/.config/openbox/rc.xml
 
 # LXQT
 lxqt:$HOME/.config/lxqt
+lxqt/lxqt-rc.xml:$HOME/.config/openbox/lxqt-rc.xml
+lxqt/xprofile:$HOME/.xprofile
 
 # Ranger
 ranger/rc.conf:$HOME/.config/ranger/rc.conf
