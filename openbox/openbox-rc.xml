@@ -369,15 +369,6 @@
         <command>chromium</command>
       </action>
     </keybind>
-    <keybind key="Mod4-x">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>oblogout</name>
-        </startupnotify>
-        <command>oblogout</command>
-      </action>
-    </keybind>
     <keybind key="Print">
       <action name="Execute">
         <startupnotify>
