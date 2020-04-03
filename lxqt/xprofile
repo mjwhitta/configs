@@ -78,10 +78,3 @@ fi
 
 # Local autostart script
 [[ ! -f $HOME/.autostart.local ]] || "$HOME/.autostart.local"
-
-# Lockscreen b/c autologin
-if [[ -n "$(enabled lock_on_login)" ]]; then
-    if [[ -n "$(command -v xscreensaver-command)" ]]; then
-        xscreensaver-command --lock &
-    fi
-fi
