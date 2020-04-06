@@ -43,6 +43,9 @@ muttator/muttatorrc:$HOME/.muttatorrc
 openbox:$HOME/.config/openbox
 openbox/openbox-rc.xml:$HOME/.config/openbox/rc.xml
 
+# PCManFM
+pcmanfm-qt:$HOME/.config/pcmanfm-qt
+
 # Ranger
 ranger/rc.conf:$HOME/.config/ranger/rc.conf
 ranger/rifle.conf:$HOME/.config/ranger/rifle.conf
