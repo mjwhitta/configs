@@ -2,10 +2,10 @@
 rofi.columns: 3
 
 ! "Font to use"
-rofi.font: monospace 13
+rofi.font: DejaVu Sans Mono 13
 
 ! "Terminal to use"
-rofi.terminal: terminator
+rofi.terminal: term
 
 ! "Ssh command to execute"
 rofi.ssh-command: {terminal} -x {ssh-client} {host}
