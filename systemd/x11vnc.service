@@ -1,0 +1,31 @@
+[Unit]
+After=display-manager.service
+Description=x11vnc VNC Server for X11
+Requires=display-manager.service
+
+[Service]
+# For GDM {
+# ExecStart=x11vnc -auth /var/lib/gdm/:0.Xauth -bg -display :0 -forever
+# or (replace gdm uid)
+# ExecStart=x11vnc -auth /run/user/120/gdm/Xauthority -bg -display :0 -forever
+# }
+# For Lightdm {
+# ExecStart=x11vnc -auth /var/run/lightdm/root/:0 -bg -display :0 -forever
+# }
+# For LXDM {
+# ExecStart=x11vnc -auth /var/run/lxdm/lxdm-:0.auth -bg -display :0 -forever
+# }
+# For SDDM {
+ExecStart=x11vnc -auth $SDDMXAUTH -bg -display :0 -forever
+ExecStartPre=bash -c "systemctl set-environment SDDMXAUTH=$(find /var/run/sddm -type f)"
+# }
+# For SLIM {
+# ExecStart=x11vnc -auth /var/run/slim.auth -bg -display :0 -forever
+# }
+ExecStop=pkill x11vnc
+Restart=on-failure
+RestartSec=2
+Type=forking
+
+[Install]
+WantedBy=graphical.target

@@ -1,80 +1,30 @@
 #!/usr/bin/env bash
 
-function enabled() {
-    [[ ! -f "$HOME/.config/lxqt/flags/$1" ]] || echo "true"
-}
-
 # Capslock is Mod4
 xmodmap -e "remove lock = Caps_Lock"
 xmodmap -e "add mod4 = Caps_Lock"
 xmodmap -e "keysym Caps_Lock = Super_L"
 
 ## Compositing
-if [[ -n "$(enabled picom)" ]]; then
-    if [[ -n "$(command -v picom)" ]]; then
-        if [[ ! -f "$HOME/.config/picom.conf" ]]; then
-            cp /etc/xdg/picom.conf "$HOME/.config/"
-        fi
-        picom -b
+if [[ -n "$(command -v picom)" ]]; then
+    if [[ ! -f "$HOME/.config/picom.conf" ]]; then
+        cp /etc/xdg/picom.conf "$HOME/.config/"
     fi
-fi
-
-## Wallpaper (nitrogen)
-if [[ -n "$(enabled nitrogen)" ]]; then
-    [[ -z "$(command -v nitrogen)" ]] || nitrogen --restore &
-fi
-
-sleep 1
-
-# Bluetooth applet
-if [[ -n "$(enabled blueman-applet)" ]]; then
-    [[ -z "$(command -v blueman-applet)" ]] || blueman-applet &
+    picom -b
 fi
 
 # Numlock
-if [[ -n "$(enabled numlockx)" ]]; then
-    [[ -z "$(command -v numlockx)" ]] || numlockx on &
-fi
+[[ -z "$(command -v numlockx)" ]] || numlockx on &
 
 # PCManFM is run in daemon-mode to enable auto-mounting of removable
 # media
-if [[ -n "$(enabled pcmanfm)" ]]; then
-    [[ -z "$(command -v pcmanfm)" ]] || pcmanfm -d &
-    [[ -z "$(command -v pcmanfm-qt)" ]] || pcmanfm-qt -d &
-fi
+[[ -z "$(command -v pcmanfm)" ]] || pcmanfm -d &
+[[ -z "$(command -v pcmanfm-qt)" ]] || pcmanfm-qt -d &
 
 sleep 10
 
 # Flameshot
-if [[ -n "$(enabled flameshot)" ]]; then
-    [[ -z "$(command -v flameshot)" ]] || flameshot &
-fi
-
-# KeePassXC
-if [[ -n "$(enabled keepassxc)" ]]; then
-    [[ -z "$(command -v keepassxc)" ]] || keepassxc &
-fi
-
-# X11VNC
-if [[ -n "$(enabled x11vnc)" ]]; then
-    if [[ -n "$(command -v x11vnc)" ]] &&
-       [[ -f "$HOME/.vnc/passwd" ]]; then
-        if [ ! -f "$HOME/.x11vnc" ]; then
-            cat >"$HOME/.x11vnc"<<EOF
--create
--nevershared
--usepw
-EOF
-        fi
-
-        (
-            while [[ ! -f "/tmp/.stop_x11vnc" ]]; do
-                x11vnc
-                sleep 1
-            done
-        ) &
-    fi
-fi
+[[ -z "$(command -v flameshot)" ]] || flameshot &
 
 # Local autostart script
 [[ ! -f $HOME/.autostart.local ]] || "$HOME/.autostart.local"
