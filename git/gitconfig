@@ -1,30 +1,32 @@
-[user]
-    name = Miles Whittaker
-    email = mj@whitta.dev
+[alias]
+    ctags = !.git/hooks/ctags
+    stalk = !.git/hooks/stalk
 [core]
     filemode = true
     attributesfile = ~/.gitattributes
     excludesfile = ~/.cvsignore
-[merge]
-    tool = vimdiff
-[ghi]
-    editor = vim
-[github]
-    host = github.com
-    user = mjwhitta
-[push]
-    default = simple
 [diff "pptxt"]
     textconv = pptxt --git
-[alias]
-    ctags = !.git/hooks/ctags
-    stalk = !.git/hooks/stalk
-[init]
-    templatedir = ~/.git
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
+[ghi]
+    editor = vim
+[github]
+    host = github.com
+    user = mjwhitta
+[init]
+    templatedir = ~/.git
 [lfs]
     locksverify = false
+[merge]
+    tool = vimdiff
+[pull]
+    ff = only
+[push]
+    default = simple
+[user]
+    name = Miles Whittaker
+    email = mj@whitta.dev
