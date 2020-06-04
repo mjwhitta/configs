@@ -24,7 +24,7 @@
 [merge]
     tool = vimdiff
 [pull]
-    ff = only
+	rebase = true
 [push]
     default = simple
 [user]
