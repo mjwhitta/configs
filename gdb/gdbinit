@@ -41,6 +41,12 @@ define hook-quit
     set confirm off
 end
 
-# Python Exploit Development Assistance for gdb
+# Go support
+add-auto-load-safe-path /usr/lib/go/src/runtime/runtime-gdb.py
+
+# Python Exploit Development Assistance (PEDA) for gdb
 try source ~/.gdb/peda/peda.py
 try peda set option autosave off
+
+# GDB Enhancement Framwork (GEF)
+try source ~/.gdb/gef/gef.py
