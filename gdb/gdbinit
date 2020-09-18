@@ -50,3 +50,6 @@ try peda set option autosave off
 
 # GDB Enhancement Framwork (GEF)
 try source ~/.gdb/gef/gef.py
+
+# pwndbg
+try source ~/.gdb/pwndbg/gdbinit.py
