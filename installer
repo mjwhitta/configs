@@ -170,7 +170,8 @@ done
 
 # Check for missing dependencies
 declare -a deps
-# deps+=("todo")
+deps+=("grep")
+deps+=("ln")
 check_deps
 
 # Check for valid params
