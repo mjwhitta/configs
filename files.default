@@ -51,12 +51,7 @@ ranger/rc.conf:$HOME/.config/ranger/rc.conf
 ranger/rifle.conf:$HOME/.config/ranger/rifle.conf
 
 # rofi
-rofi/config:$HOME/.config/rofi/config
-# rofi/Arc.rasi:$HOME/.config/rofi/theme.rasi
-rofi/dmenu.rasi:$HOME/.config/rofi/theme.rasi
-# rofi/glue_pro_blue.rasi:$HOME/.config/rofi/theme.rasi
-# rofi/paper-float.rasi:$HOME/.config/rofi/theme.rasi
-# rofi/Paper.rasi:$HOME/.config/rofi/theme.rasi
+rofi/config.rasi:$HOME/.config/rofi/config.rasi
 
 # Terminator
 terminator:$HOME/.config/terminator

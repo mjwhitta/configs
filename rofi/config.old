@@ -31,9 +31,6 @@ rofi.parse-known-hosts: true
 ! "Set the matching algorithm. (normal, regex, glob, fuzzy)"
 rofi.matching: regex
 
-! "New style theme file"
-rofi.theme: ~/.config/rofi/theme.rasi
-
 ! "Paste primary selection"
 rofi.kb-primary-paste: Control+V,Shift+Insert
 
