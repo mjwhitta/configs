@@ -749,7 +749,7 @@
       <weight>Normal</weight>
     </font>
     <keepBorder>yes</keepBorder>
-    <name>Clearlooks-3.4</name>
+    <name>Clearlooks</name>
     <titleLayout>NDSLIMC</titleLayout>
   </theme>
 </openbox_config>
