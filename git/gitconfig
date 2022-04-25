@@ -19,15 +19,17 @@
     user = mjwhitta
 [init]
     templatedir = ~/.git
-	defaultBranch = master
+    defaultBranch = master
 [lfs]
     locksverify = false
 [merge]
     tool = vimdiff
 [pull]
-	ff = only
+    ff = only
 [push]
     default = simple
 [user]
     name = Miles Whittaker
     email = mj@whitta.dev
+[safe]
+    directory = *
