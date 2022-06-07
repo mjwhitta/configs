@@ -1,117 +1,42 @@
 [global_config]
-  enabled_plugins = ,
   geometry_hinting = True
-  title_font = DejaVu Sans Mono 11
+  inactive_color_offset = 1.0
   title_use_system_font = False
+  title_font = DejaVu Sans Mono 11
 [keybindings]
-  broadcast_all = None
-  broadcast_group = None
-  broadcast_off = None
-  close_term = None
-  close_window = None
-  copy = None
-  cycle_next = None
-  cycle_prev = None
-  edit_tab_title = None
-  edit_terminal_title = None
-  edit_window_title = None
-  go_down = None
-  go_left = None
-  go_next = None
-  go_prev = None
-  go_right = None
-  go_up = None
-  group_all = None
-  group_tab = None
-  help = None
-  hide_window = None
-  insert_number = None
-  insert_padded = None
-  layout_launcher = None
-  move_tab_left = None
-  move_tab_right = None
-  new_tab = None
-  new_terminator = None
-  new_window = None
-  next_tab = None
-  prev_tab = None
-  reset = None
-  reset_clear = None
-  resize_down = None
-  resize_left = None
-  resize_right = None
-  resize_up = None
-  rotate_ccw = None
-  rotate_cw = None
-  scaled_zoom = None
-  search = None
-  split_horiz = None
-  split_vert = None
-  toggle_scrollbar = None
-  toggle_zoom = None
-  ungroup_all = None
-  ungroup_tab = None
-[layouts]
-  [[default]]
-    [[[child1]]]
-      parent = window0
-      profile = default
-      type = Terminal
-    [[[window0]]]
-      parent = ""
-      type = Window
-[plugins]
 [profiles]
   [[default]]
-    allow_bold = False
-    audible_bell = True
-    background_color = "#323232"
-    copy_on_selection = True
-    cursor_color = "#ffffff"
-    cursor_color_fg = False
+    visible_bell = True
+    background_color = "#002b36"
+    cursor_color = "#aaaaaa"
     font = DejaVu Sans Mono 11
-    foreground_color = "#507fff"
-    icon_bell = False
-    palette = "#323232:#ff50aa:#50aa00:#ccaa50:#507fff:#aa7fff:#50cccc:#cccccc:#505050:#ff7fff:#50cc50:#cccc50:#50aaff:#aaaaff:#50eecc:#eeeeee"
-    scroll_on_output = True
-    scrollback_infinite = True
-    scrollbar_position = hidden
+    foreground_color = "#839496"
     show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    word_chars = "-,./?%&#:_~"
+    login_shell = True
     use_system_font = False
-    word_chars = "-A-Za-z0-9,./?%&#_"
   [[light]]
-    allow_bold = False
-    audible_bell = True
-    background_color = "#eeeeee"
-    copy_on_selection = True
-    cursor_color = "#ffffff"
-    cursor_color_fg = False
+    visible_bell = True
+    background_color = "#fdf6e3"
+    cursor_color = "#aaaaaa"
     font = DejaVu Sans Mono 11
-    foreground_color = "#507fff"
-    icon_bell = False
-    palette = "#323232:#ff50aa:#50aa00:#ccaa50:#507fff:#aa7fff:#50cccc:#cccccc:#505050:#ff7fff:#50cc50:#cccc50:#50aaff:#aaaaff:#50eecc:#eeeeee"
-    scroll_on_output = True
-    scrollback_infinite = True
-    scrollbar_position = hidden
+    foreground_color = "#657b83"
     show_titlebar = False
-    use_system_font = False
-    word_chars = "-A-Za-z0-9,./?%&#_"
-  [[tmux]]
-    allow_bold = False
-    audible_bell = True
-    background_color = "#323232"
-    copy_on_selection = True
-    cursor_color = "#ffffff"
-    cursor_color_fg = False
-    custom_command = [[ -n $(command -v tmux) ]] && [[ ! -f $HOME/.notmux ]] && [[ -z $TMUX ]] && tmux -2 new -A -s $(hostname) || $SHELL
-    font = DejaVu Sans Mono 11
-    foreground_color = "#507fff"
-    icon_bell = False
-    palette = "#323232:#ff50aa:#50aa00:#ccaa50:#507fff:#aa7fff:#50cccc:#cccccc:#505050:#ff7fff:#50cc50:#cccc50:#50aaff:#aaaaff:#50eecc:#eeeeee"
-    scroll_on_output = True
-    scrollback_infinite = True
     scrollbar_position = hidden
-    show_titlebar = False
-    use_custom_command = True
+    scrollback_infinite = True
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    word_chars = "-,./?%&#:_~"
+    login_shell = True
     use_system_font = False
-    word_chars = "-A-Za-z0-9,./?%&#_"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
