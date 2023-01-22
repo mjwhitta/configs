@@ -6,7 +6,7 @@ are some commands to install or uninstall my configs:
 Put configs in `$HOME/.configs`:
 
 ```
-$ git clone https://gitlab.com/mjwhitta/configs.git $HOME/.configs
+$ git clone https://github.com/mjwhitta/configs.git $HOME/.configs
 $ cd $HOME/.configs
 ```
 
