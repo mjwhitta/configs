@@ -18,7 +18,7 @@
     host = github.com
     user = mjwhitta
 [init]
-    defaultBranch = master
+	defaultBranch = main
     templatedir = ~/.git
 [lfs]
     locksverify = false
