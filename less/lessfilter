@@ -47,4 +47,5 @@ if [[ -z $lexer ]]; then
     esac
 fi
 
-pygmentize -g ${lexer:+-l $lexer} "$1"
+[[ -n $lexer ]] || pygmentize -g "$1"
+[[ -z $lexer ]] || pygmentize -l "$lexer" "$1"
