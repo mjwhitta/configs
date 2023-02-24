@@ -39,7 +39,7 @@ mutt:$HOME/.mutt
 # Muttator
 muttator/muttatorrc:$HOME/.muttatorrc
 
-# NeoVIM
+# Neovim
 nvim:$HOME/.config/nvim
 
 # Openbox
