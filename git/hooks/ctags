@@ -7,4 +7,4 @@ trap "rm -f .$$.tags" EXIT
 
 git ls-files | ctags -f .$$.tags -L - \
     --languages=-javascript,sql --tag-relative
-mv ".$$.tags" .tags
+mv -f ".$$.tags" .tags
