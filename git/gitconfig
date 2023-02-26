@@ -1,5 +1,5 @@
 [alias]
-    ctags = !.git/hooks/ctags
+	ctags = !.git/hooks/ctags
     stalk = !.git/hooks/stalk
 [core]
     attributesfile = ~/.gitattributes
