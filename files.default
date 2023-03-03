@@ -33,6 +33,9 @@ lxqt:$HOME/.config/lxqt
 lxqt/lxqt-rc.xml:$HOME/.config/openbox/rc.xml
 lxqt/xprofile:$HOME/.xprofile
 
+# LX Terminal
+lxterminal/dracula.conf:$HOME/.config/lxterminal/lxterminal.conf
+
 # Mutt
 mutt:$HOME/.mutt
 
@@ -54,7 +57,7 @@ ranger/rc.conf:$HOME/.config/ranger/rc.conf
 ranger/rifle.conf:$HOME/.config/ranger/rifle.conf
 
 # rofi
-rofi/config.rasi:$HOME/.config/rofi/config.rasi
+rofi/dracula2.rasi:$HOME/.config/rofi/config.rasi
 
 # Terminator
 terminator:$HOME/.config/terminator
