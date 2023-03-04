@@ -1,3 +1,5 @@
+# These are examples. Prepend "c:" to copy rather than symlink.
+
 # Conky
 # conky/conky_manjaro:$HOME/.conkyrc
 # conky/conkyrc.gray:$HOME/.conkyrc
@@ -34,7 +36,7 @@ lxqt/lxqt-rc.xml:$HOME/.config/openbox/rc.xml
 lxqt/xprofile:$HOME/.xprofile
 
 # LX Terminal
-lxterminal/dracula.conf:$HOME/.config/lxterminal/lxterminal.conf
+c:lxterminal/dracula.conf:$HOME/.config/lxterminal/lxterminal.conf
 
 # Mutt
 mutt:$HOME/.mutt
