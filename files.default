@@ -52,7 +52,7 @@ openbox:$HOME/.config/openbox
 openbox/openbox-rc.xml:$HOME/.config/openbox/rc.xml
 
 # PCManFM
-pcmanfm-qt:$HOME/.config/pcmanfm-qt
+c:pcmanfm-qt/dracula.conf:$HOME/.config/pcmanfm-qt/default/settings.conf
 
 # Ranger
 ranger/rc.conf:$HOME/.config/ranger/rc.conf
