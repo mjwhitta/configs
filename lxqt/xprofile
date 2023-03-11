@@ -5,14 +5,6 @@ xmodmap -e "remove lock = Caps_Lock"
 xmodmap -e "add mod4 = Caps_Lock"
 xmodmap -e "keysym Caps_Lock = Super_L"
 
-## Compositing
-if [[ -n "$(command -v picom)" ]]; then
-    if [[ ! -f "$HOME/.config/picom.conf" ]]; then
-        cp /etc/xdg/picom.conf "$HOME/.config/"
-    fi
-    picom -b
-fi
-
 # Numlock
 [[ -z "$(command -v numlockx)" ]] || numlockx on &
 
@@ -25,6 +17,9 @@ sleep 10
 
 # Flameshot
 [[ -z "$(command -v flameshot)" ]] || flameshot &
+
+# ksnip
+[[ -z "$(command -v ksnip)" ]] || ksnip &
 
 # Local autostart script
 [[ ! -f $HOME/.autostart.local ]] || "$HOME/.autostart.local"
