@@ -1,25 +1,3 @@
-! milesrc
-!*background: #323232
-!*foreground: #507fff
-! milesrc normal colors
-!*color0: #323232
-!*color1: #ff50aa
-!*color2: #50aa00
-!*color3: #ccaa50
-!*color4: #507fff
-!*color5: #aa7fff
-!*color6: #50cccc
-!*color7: #cccccc
-! milesrc bright colors
-!*color8: #505050
-!*color9: #ff7fff
-!*color10: #50cc50
-!*color11: #cccc50
-!*color12: #50aaff
-!*color13: #aaaaff
-!*color14: #50eecc
-!*color15: #eeeeee
-
 ! Solarized dark
 #define S_yellow        #b58900
 #define S_orange        #cb4b16
@@ -61,28 +39,6 @@
 *color14:                 S_base1
 *color15:                 S_base3
 
-! Tango
-!*background: #323232
-!*foreground: #00aaff
-! Tango normal colors
-!*color0: #000000
-!*color1: #cc0000
-!*color2: #4e9a06
-!*color3: #c4a000
-!*color4: #3465a4
-!*color5: #75507b
-!*color6: #0b939b
-!*color7: #d3d7cf
-! Tango bright colors
-!*color8: #555753
-!*color9: #ef2929
-!*color10: #8ae234
-!*color11: #fce94f
-!*color12: #729fcf
-!*color13: #ad7fa8
-!*color14: #34e2e2
-!*color15: #eeeeec
-
 ! Font and locale
 *utf8: 1
 *locale: true
@@ -90,12 +46,12 @@
 *renderFont: true
 *preeditType: Root
 *xftAntialias: true
-*faceName: DejaVu San Mono:pixelsize=15
+*faceName: DejaVu Sans Mono:pixelsize=15
 *faceNameDoublesize: DejaVu Sans Mono:pixelsize=18
 
 ! Look and feel
 *inputMethod:ibus
-*termName: screen-256color
+*termName: tmux-256color
 *geometry: 96x32
 *scrollBar: false
 *loginshell: true

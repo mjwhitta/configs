@@ -91,5 +91,5 @@ w3m/config:$HOME/.w3m/config
 w3m/mailcap:$HOME/.w3m/mailcap
 
 # X11
-x11/Xresources:$HOME/.Xresources
+x11/Xresources.dracula:$HOME/.Xresources
 x11/xscreensaver:$HOME/.xscreensaver
