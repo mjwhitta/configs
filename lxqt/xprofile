@@ -18,8 +18,8 @@ sleep 10
 # Flameshot
 [[ -z "$(command -v flameshot)" ]] || flameshot &
 
-# ksnip
-[[ -z "$(command -v ksnip)" ]] || ksnip &
+# ksnip (starts in foreground, gross)
+#[[ -z "$(command -v ksnip)" ]] || ksnip &
 
 # Local autostart script
 [[ ! -f $HOME/.autostart.local ]] || "$HOME/.autostart.local"
