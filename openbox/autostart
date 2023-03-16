@@ -132,7 +132,7 @@ EOF
 fi
 
 # Local autostart script
-[ ! -f ~/.autostart.local ] || ~/.autostart.local
+[ ! -f "$HOME/.autostart.local" ] || "$HOME/.autostart.local"
 
 # Lockscreen b/c autologin
 [ -z "$(enabled lock_on_login)" ] || xscreensaver-command -lock &
