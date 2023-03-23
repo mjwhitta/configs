@@ -2,8 +2,6 @@
   geometry_hinting = True
   extra_styling = False
   inactive_color_offset = 1.0
-  title_use_system_font = False
-  title_font = DejaVuSansMono Nerd Font Mono 11
 [keybindings]
 [profiles]
   [[default]]
