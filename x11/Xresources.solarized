@@ -46,8 +46,8 @@
 *renderFont: true
 *preeditType: Root
 *xftAntialias: true
-*faceName: DejaVu Sans Mono:pixelsize=15
-*faceNameDoublesize: DejaVu Sans Mono:pixelsize=18
+*faceName: DejaVuSansMono Nerd Font Mono:pixelsize=15
+*faceNameDoublesize: DejaVuSansMono Nerd Font Mono:pixelsize=18
 
 ! Look and feel
 *inputMethod:ibus

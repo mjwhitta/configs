@@ -3,13 +3,13 @@
   extra_styling = False
   inactive_color_offset = 1.0
   title_use_system_font = False
-  title_font = DejaVu Sans Mono 11
+  title_font = DejaVuSansMono Nerd Font Mono 11
 [keybindings]
 [profiles]
   [[default]]
     visible_bell = True
     background_color = "#282a36"
-    font = DejaVu Sans Mono 11
+    font = DejaVuSansMono Nerd Font Mono 11
     foreground_color = "#f8f8f2"
     show_titlebar = False
     scrollbar_position = hidden
@@ -21,7 +21,7 @@
   [[solarized dark]]
     visible_bell = True
     background_color = "#002b36"
-    font = DejaVu Sans Mono 11
+    font = DejaVuSansMono Nerd Font Mono 11
     foreground_color = "#839496"
     show_titlebar = False
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
@@ -30,7 +30,7 @@
   [[solarized light]]
     visible_bell = True
     background_color = "#fdf6e3"
-    font = DejaVu Sans Mono 11
+    font = DejaVuSansMono Nerd Font Mono 11
     foreground_color = "#657b83"
     show_titlebar = False
     scrollbar_position = hidden

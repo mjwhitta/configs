@@ -3,7 +3,7 @@ allow_bold = false
 audible_bell = true
 clickable_url = true
 dynamic_title = true
-font = DejaVu Sans Mono 11
+font = DejaVuSansMono Nerd Font Mono 11
 #fullscreen = true
 #geometry = 640x480
 icon_name = terminal
@@ -73,7 +73,7 @@ color14 = #50eecc
 color15 = #eeeeee
 
 [hints]
-font = DejaVu Sans Mono 11
+font = DejaVuSansMono Nerd Font Mono 11
 foreground = #507fff
 background = #323232
 #active_foreground = #e68080

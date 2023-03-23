@@ -713,37 +713,37 @@
   <theme>
     <animateIconify>yes</animateIconify>
     <font place="ActiveOnScreenDisplay">
-      <name>DejaVu Sans Mono</name>
+      <name>DejaVuSansMono Nerd Font Mono</name>
       <size>9</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="ActiveWindow">
-      <name>DejaVu Sans Mono</name>
+      <name>DejaVuSansMono Nerd Font Mono</name>
       <size>10</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>DejaVu Sans Mono</name>
+      <name>DejaVuSansMono Nerd Font Mono</name>
       <size>9</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="InactiveWindow">
-      <name>DejaVu Sans Mono</name>
+      <name>DejaVuSansMono Nerd Font Mono</name>
       <size>10</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="MenuHeader">
-      <name>DejaVu Sans Mono</name>
+      <name>DejaVuSansMono Nerd Font Mono</name>
       <size>9</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
     </font>
     <font place="MenuItem">
-      <name>DejaVu Sans Mono</name>
+      <name>DejaVuSansMono Nerd Font Mono</name>
       <size>9</size>
       <slant>Normal</slant>
       <weight>Normal</weight>
