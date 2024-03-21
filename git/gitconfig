@@ -34,3 +34,5 @@
 [user]
     name = Miles Whittaker
     email = mj@whitta.dev
+[include]
+    path = ~/.gitconfig.d/local
