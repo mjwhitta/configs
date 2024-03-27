@@ -3,7 +3,6 @@
     stalk = !.git/hooks/stalk
 [core]
     attributesfile = ~/.gitattributes
-    autocrlf = true
     excludesfile = ~/.cvsignore
     filemode = true
 [diff "pptxt"]
