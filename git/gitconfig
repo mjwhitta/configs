@@ -7,6 +7,9 @@
     filemode = true
 [diff "pptxt"]
     textconv = pptxt --git
+[fetch]
+	prune = true
+	pruneTags = true
 [filter "lfs"]
     clean = git-lfs clean -- %f
     process = git-lfs filter-process
@@ -36,6 +39,3 @@
     email = mj@whitta.dev
 [include]
     path = ~/.gitconfig.d/local
-[fetch]
-	prune = true
-	pruneTags = true
