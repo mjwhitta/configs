@@ -36,3 +36,6 @@
     email = mj@whitta.dev
 [include]
     path = ~/.gitconfig.d/local
+[fetch]
+	prune = true
+	pruneTags = true
