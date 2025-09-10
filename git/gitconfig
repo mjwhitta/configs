@@ -33,6 +33,7 @@
     autoSetupRemote = true
     default = simple
 [safe]
+    bareRepository = explicit
     directory = *
 [user]
     name = Miles Whittaker
