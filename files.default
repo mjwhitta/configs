@@ -24,6 +24,9 @@ git/gitconfig:$HOME/.gitconfig
 git/gitattributes:$HOME/.gitattributes
 git/hooks:$HOME/.git/hooks
 
+# Go
+golangci.yml:$HOME/.golangci.yml
+
 # htop
 htop/htoprc:$HOME/.config/htop/htoprc
 
